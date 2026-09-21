@@ -1,12 +1,11 @@
 name: sync-notion
 
 on:
-  # Enable this AFTER a successful `--dry-run` and a successful `--full` run via
-  # workflow_dispatch. Until then the sync is manual only, so merging this file
-  # can't fire a live write against Notion.
-  # push:
-  #   branches: [main]
-  #   paths: ['content/**']
+  # Verified by a dry run and a full resync on 2026-09-21: 76 rows adopted by
+  # name, 0 created, page bodies and Photo untouched.
+  push:
+    branches: [main]
+    paths: ['content/**']
   workflow_dispatch:
     inputs:
       full:
