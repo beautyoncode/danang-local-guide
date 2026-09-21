@@ -1,0 +1,34 @@
+slug: banh-trang-tron-hong-gam
+name: Bánh tráng trộn Hồng Gấm
+type: food
+category: an-vat
+area: hai-chau
+address: Đường Núi Thành, bên cạnh Đại học Kiến Trúc Đà Nẵng
+price_vnd: 20k, 25k
+price_band: "1"
+best_session:
+  - evening
+best_season:
+  - year-round
+vibe:
+  - street-food
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Bánh tráng trộn, bánh tráng bơ, bánh tráng cuốn sốt me, gỏi xoài
+  en: Bánh tráng trộn, avocado rice paper, tamarind rice paper roll, mango salad
+why_we_go:
+  vi: |-
+    - Chỉ bán chiều tối, chỉ bán mang đi.
+    - Có bánh tráng trộn, bánh tráng bơ, bánh tráng cuốn sốt me, gỏi xoài.
+  en: Classic student snack menu.
+hours_notes:
+  vi: Chỉ bán chiều tối, chỉ bán mang đi.
+  en: Evening only, takeaway only.
+link: https://www.foody.vn/da-nang/banh-trang-tron-hong-gam-dai-hoc-kien-truc
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

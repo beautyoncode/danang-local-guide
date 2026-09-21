@@ -1,0 +1,29 @@
+slug: ge-cafe
+name: Gé Cafe
+type: coffee
+category: work-cafe
+area: hai-chau
+address: "[24-26 Lê Hồng Phong, Hải Châu, Đà Nẵng](https://goo.gl/maps/YRJgrDJTTNM9KH5o6)"
+price_band: "1"
+best_session:
+  - late-night
+best_season:
+  - year-round
+vibe:
+  - open-24h
+  - work-friendly
+good_for:
+  - students
+  - deadline
+why_we_go:
+  vi: "- Phù hợp với các bạn sinh viên hoặc bạn bị dí deadline (như mình chẳng hạn :( )"
+  en: Open 24/7 with no surcharge - for students and deadline emergencies.
+hours_notes:
+  vi: 24/24 mỗi ngày (đặc biệt không có phụ thu)
+  en: 24/7
+link: https://www.facebook.com/gecafedanang
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,36 @@
+slug: the-59-cafe
+name: The 59 Cafe
+type: coffee
+category: garden-cafe
+area: hai-chau
+address: Kiệt 59 Hải Phòng, Hải Châu, Đà Nẵng
+price_vnd: 30k – 50k
+price_band: "1"
+best_session:
+  - morning
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - garden
+  - quiet
+  - work-friendly
+good_for:
+  - solo
+  - friends
+  - work
+why_we_go:
+  vi: |-
+    - Một khu vườn để thở và trò chuyện cùng bạn bè, gia đình.
+    - Góc nhìn ra khuôn viên chùa để ngắm cây cối, yên tĩnh.
+    - Nơi trốn văn phòng ngồi làm việc.
+  en: Quiet garden cafe overlooking a pagoda's grounds; another office-escape spot.
+hours_notes:
+  vi: 7AM – 8:30PM
+  en: 7AM–8:30PM
+link: https://maps.app.goo.gl/oX5nsGg1DsSfRzRH8
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,33 @@
+slug: tiem-ca-phe-cau-ut
+name: Tiệm Cà Phê Cậu Út
+type: coffee
+category: local-coffee
+area: hai-chau
+address: |-
+  - [34 Lê Hồng Phong, Hải Châu, Đà Nẵng](https://goo.gl/maps/pVt3oeEdY3gWfPhN8)
+  - [99 Âu Cơ, Liên Chiểu, Đà Nẵng](https://goo.gl/maps/eSSMQj4Y3C7sKScs9)
+price_vnd: trung bình 30k
+price_band: "1"
+best_session:
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - retro
+  - chill
+good_for:
+  - friends
+  - family
+  - reading
+why_we_go:
+  vi: "- Quán phong cách bao cấp, phù hợp những buổi hẹn cuối tuần với bạn bè và gia đình. Tầng 2 khá chill, phù hợp đọc sách."
+  en: Retro style, good for weekend catch-ups. Second floor is chill and good for reading.
+hours_notes:
+  vi: 7:00 – 22:00
+  en: 7:00–22:00
+link: https://www.facebook.com/caphecauut
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

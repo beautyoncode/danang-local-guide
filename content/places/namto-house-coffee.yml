@@ -1,0 +1,36 @@
+slug: namto-house-coffee
+name: Namto House Coffee
+type: coffee
+category: work-cafe
+area: hai-chau
+address: |-
+  - [130 Nguyễn Chí Thanh, Đà Nẵng](https://goo.gl/maps/Due8G72EEWfWewwdA)
+  - [480 Tôn Đức Thắng, Liên Chiểu, Đà Nẵng](https://goo.gl/maps/Pot4zzW12VwFZFP49)
+price_vnd: trung bình 35k; có bán bánh (tiramisu ở đây ngon lắm, tầm 60k)
+price_band: "1"
+best_session:
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - retro
+  - quiet
+good_for:
+  - solo
+  - work
+  - reading
+must_try:
+  vi: Tiramisu (~60k)
+  en: Tiramisu (~60k)
+why_we_go:
+  vi: "- Quán mang hơi hướng cổ điển phong cách Châu Âu, không gian yên tĩnh và thoải mái để làm việc và đọc sách."
+  en: Classic European-style, quiet and comfortable for working and reading.
+hours_notes:
+  vi: 7:00 – 22:00
+  en: 7:00–22:00
+link: https://www.facebook.com/namtohouse
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

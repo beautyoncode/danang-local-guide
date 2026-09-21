@@ -1,0 +1,27 @@
+slug: new-golden-pine-pub-club
+name: New Golden Pine Pub & Club
+type: nightlife
+category: club-dj
+area: son-tra
+address: 325 Đ. Trần Hưng Đạo, An Hải Bắc, Sơn Trà, Đà Nẵng
+price_band: "2"
+best_session:
+  - late-night
+best_season:
+  - year-round
+vibe:
+  - indoor
+  - dj
+good_for:
+  - friends
+why_we_go:
+  vi: |-
+    - Không gian đóng, DJ.
+    - Nơi tập hợp của các trai xinh gái đẹp =))))
+  en: Indoor, DJ, young crowd.
+link: https://goo.gl/maps/uQFKwcJDXE7piwrU9
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

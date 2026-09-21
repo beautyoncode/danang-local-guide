@@ -1,0 +1,36 @@
+slug: oc-cay-ha-noi
+name: Ốc cay Hà Nội
+type: food
+category: hai-san
+area: hai-chau
+address: 174-176 Ông Ích Khiêm
+price_vnd: 70k – 150k
+price_band: "2"
+best_session:
+  - dinner
+  - evening
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - group
+  - friends
+must_try:
+  vi: Ốc, chip chip; gọi thêm bánh mỳ nếu muốn no
+  en: Snails (ốc), chip chip; add bread to fill up
+why_we_go:
+  vi: |-
+    - Chỉ bán chiều tối, mở cửa từ 4PM.
+    - Quán ngon lắm, đặc biệt cho dân ghiền ốc, chip chip. Muốn ăn no thì gọi thêm bánh mỳ.
+  en: Great for snail lovers.
+hours_notes:
+  vi: Chỉ bán chiều tối, mở cửa từ 4PM.
+  en: Open from 4PM, evening only.
+link: https://www.foody.vn/da-nang/oc-cay-ha-noi-ong-ich-khiem
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,31 @@
+slug: ram-cuon-cai
+name: Ram cuốn cải
+type: food
+category: an-vat
+area: hai-chau
+address: 272 Lê Duẩn, Hải Châu, Đà Nẵng
+price_vnd: 15k – 30k / phần
+price_band: "1"
+best_session:
+  - afternoon
+  - evening
+best_season:
+  - winter
+vibe:
+  - street-food
+  - local
+good_for:
+  - solo
+  - group
+must_try:
+  vi: Ram cuốn cải
+  en: Ram cuốn cải
+why_we_go:
+  vi: "- Vào những ngày trời chuyển lạnh, những ngày gió mùa về, thưởng thức món ram cuốn cải ở đây thì tuyệt vời."
+  en: Perfect on cold or monsoon days.
+link: https://hanamihotel.com/2019/top-6-quan-ram-cuon-cai-da-nang/
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

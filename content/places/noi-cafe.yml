@@ -1,0 +1,33 @@
+slug: noi-cafe
+name: Nối Cafe
+type: coffee
+category: local-coffee
+area: hai-chau
+address: |-
+  - [113/18 Nguyễn Chí Thanh, Đà Nẵng](https://g.page/noicafe?share)
+  - [113/14 Nguyễn Chí Thanh, Đà Nẵng](https://g.page/noicafe?share)
+  - [113/25 Nguyễn Chí Thanh, Đà Nẵng](https://g.page/noicafe?share)
+price_vnd: trung bình 25k
+price_band: "1"
+best_session:
+  - morning
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - retro
+  - local
+good_for:
+  - friends
+why_we_go:
+  vi: "- Quán phong cách bao cấp, quen thuộc và nổi tiếng với giới trẻ Đà Nẵng."
+  en: Retro "bao cấp" style - famous among young Da Nang locals.
+hours_notes:
+  vi: 6:30 – 22:00
+  en: 6:30–22:00
+link: https://www.facebook.com/NoiCafeDaNang/
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

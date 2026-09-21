@@ -1,0 +1,33 @@
+slug: bun-bo-hue-kiet-123-nguyen-thi-minh-khai
+name: Bún bò Huế (Kiệt 123 Nguyễn Thị Minh Khai)
+type: food
+category: bun
+area: hai-chau
+address: Kiệt 123 Nguyễn Thị Minh Khai, ĐN
+price_vnd: 40k – 60k
+price_band: "1"
+best_session:
+  - morning
+best_season:
+  - summer
+vibe:
+  - casual
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Bún bò Huế
+  en: Bún bò Huế
+why_we_go:
+  vi: |-
+    - Chỉ bán sáng.
+    - Đi tắm biển về mà làm tô bún này là hết xẩy :))
+  en: Perfect after a swim in the sea.
+hours_notes:
+  vi: Chỉ bán sáng.
+  en: Morning only.
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

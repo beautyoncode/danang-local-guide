@@ -1,0 +1,33 @@
+slug: cam-cafe
+name: Cam Cafe
+type: coffee
+category: local-coffee
+area: hai-chau
+address: 75 Nguyễn Du
+price_vnd: 15k – 50k
+price_band: "1"
+best_session:
+  - early-morning
+  - evening
+best_season:
+  - year-round
+vibe:
+  - quiet
+  - airy
+good_for:
+  - solo
+  - couple
+must_try:
+  vi: Cafe muối (25k), cafe muối kem cheese (35k)
+  en: Salt coffee (25k), salt cheese-cream coffee (35k)
+why_we_go:
+  vi: |-
+    - **Phù hợp:** đường vắng yên tĩnh, không gian thoáng — ngồi cafe sáng sớm cuối tuần hoặc buổi tối những ngày trăng sáng.
+    - Cafe muối (25k) và cafe muối kem cheese (35k) siêu ngon.
+  en: Quiet street and airy space - great on weekend mornings or moonlit evenings.
+link: https://camcafe-cafe.business.site/
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,26 @@
+slug: on-the-radio-bar
+name: On The Radio Bar
+type: nightlife
+category: live-music
+area: hai-chau
+address: 76 Thái Phiên
+price_band: "2"
+best_session:
+  - late-night
+best_season:
+  - year-round
+vibe:
+  - indoor
+  - live-music
+  - dj
+good_for:
+  - friends
+why_we_go:
+  vi: "- Không gian đóng, nhạc live, DJ."
+  en: Indoor space, live music and DJ.
+link: https://g.page/radiodanang?share
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

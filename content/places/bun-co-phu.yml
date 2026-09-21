@@ -1,0 +1,31 @@
+slug: bun-co-phu
+name: Bún Cô Phú
+type: food
+category: bun
+area: son-tra
+address: 78 Khúc Hạo
+price_vnd: 20k – 40k / tô
+price_band: "1"
+best_session:
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Bún
+  en: Bún
+why_we_go:
+  vi: "- **Lưu ý:** bán chiều tối."
+  en: Cheap noodle bowl for the evening. (Add your own notes.)
+hours_notes:
+  vi: Chỉ bán chiều tối.
+  en: Evening only.
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,154 @@
+# Every enum the schema allows, with its bilingual display label.
+# Notion select/multi-select options render as "<en> · <vi>", emoji-prefixed
+# where an emoji is given — matching the V2 workspace convention.
+#
+# CI (src/validate.mjs) rejects any value in content/**/*.yml that is not
+# a key here, so the Notion sync can never invent a junk select option.
+
+type:
+  food:      { vi: Đồ ăn,           en: Food,            emoji: "🍜" }
+  coffee:    { vi: Cà phê,          en: Coffee,          emoji: "☕" }
+  nightlife: { vi: Bar/Pub,         en: Nightlife,       emoji: "🍻" }
+  wellness:  { vi: Spa & Massage,   en: Wellness,        emoji: "💆" }
+  sights:    { vi: Đi dạo,          en: Sights & Walks,  emoji: "🚶" }
+  outdoor:   { vi: Ngoài trời,      en: Outdoor,         emoji: "🏄" }
+
+# Each category belongs to exactly one type. `of` is validated: a place's
+# category must belong to its type.
+category:
+  # food
+  com:                { of: food, vi: Cơm,                en: Rice }
+  bun:                { of: food, vi: Bún,                en: Noodles }
+  my-quang:           { of: food, vi: Mỳ Quảng,           en: Mỳ Quảng }
+  banh-canh:          { of: food, vi: Bánh canh,          en: Bánh canh }
+  hai-san:            { of: food, vi: Hải sản,            en: Seafood }
+  trung-hoa:          { of: food, vi: Ẩm thực Trung Hoa,  en: Chinese }
+  an-vat:             { of: food, vi: Ăn vặt,             en: Snacks }
+  an-sang:            { of: food, vi: Ăn sáng,            en: Breakfast }
+  thuan-chay:         { of: food, vi: Thuần chay,         en: Vegan }
+  mon-khac:           { of: food, vi: Món khác,           en: Other Vietnamese }
+  # coffee
+  local-coffee:       { of: coffee, vi: Cafe truyền thống, en: Local coffee }
+  specialty-coffee:   { of: coffee, vi: Cafe specialty,   en: Specialty coffee }
+  garden-cafe:        { of: coffee, vi: Cafe sân vườn,    en: Garden cafe }
+  view-cafe:          { of: coffee, vi: Cafe view đẹp,    en: View cafe }
+  work-cafe:          { of: coffee, vi: Cafe làm việc,    en: Work-friendly cafe }
+  # nightlife
+  beach-bar:          { of: nightlife, vi: Bar biển,      en: Beach bar }
+  chill-bar:          { of: nightlife, vi: Bar chill,     en: Chill bar }
+  club-dj:            { of: nightlife, vi: Club / DJ,     en: Club / DJ }
+  live-music:         { of: nightlife, vi: Nhạc sống,     en: Club / live music }
+  # wellness
+  spa-massage:        { of: wellness, vi: Spa & Massage,  en: Spa & Massage }
+  # sights
+  di-dao:             { of: sights, vi: Đi dạo,           en: Walk }
+  di-bien:            { of: sights, vi: Đi biển,          en: Beach }
+  xe-may:             { of: sights, vi: Đi dạo xe máy,    en: Motorbike ride }
+  hoang-hon:          { of: sights, vi: Ngắm hoàng hôn,   en: Sunset spot }
+  # outdoor
+  leo-nui:            { of: outdoor, vi: Leo núi,         en: Hike }
+  sup:                { of: outdoor, vi: Chèo SUP,        en: SUP }
+
+# `official_name` records the post-2025 administrative name after the
+# Da Nang – Quảng Nam merger. The guide shows the informal name locals use;
+# the official one is here so nothing has to be restructured later (Risk 6).
+area:
+  hai-chau:   { vi: Hải Châu,   en: Hai Chau,   official_name: Phường Hải Châu }
+  son-tra:    { vi: Sơn Trà,    en: Son Tra,    official_name: Phường Sơn Trà }
+  my-an:      { vi: Mỹ An,      en: My An,      official_name: Phường Ngũ Hành Sơn }
+  lien-chieu: { vi: Liên Chiểu, en: Lien Chieu, official_name: Phường Liên Chiểu }
+  hoa-xuan:   { vi: Hòa Xuân,   en: Hoa Xuan,   official_name: Phường Hòa Xuân }
+  hoi-an:     { vi: Hội An,     en: Hoi An,     official_name: Phường Hội An }
+
+# What time of day. Answers "it's 7AM, where do I go?"
+best_session:
+  early-morning: { vi: Sáng sớm,   en: Early Morning, emoji: "🌅", time: "4:30–7AM" }
+  morning:       { vi: Buổi sáng,  en: Morning,       emoji: "☀️", time: "7–11AM" }
+  lunch:         { vi: Buổi trưa,  en: Lunch,         emoji: "🍜", time: "11AM–2PM" }
+  afternoon:     { vi: Buổi chiều, en: Afternoon,     emoji: "☕", time: "2–5PM" }
+  sunset:        { vi: Hoàng hôn,  en: Sunset,        emoji: "🌇", time: "5–6:30PM" }
+  dinner:        { vi: Bữa tối,    en: Dinner,        emoji: "🍽️", time: "6–9PM" }
+  evening:       { vi: Buổi tối,   en: Evening,       emoji: "🌙", time: "7–11PM" }
+  late-night:    { vi: Khuya,      en: Late Night,    emoji: "🌃", time: "11PM–late" }
+
+# What month of the year. Answers "I'm in Da Nang in October, what's good?"
+# Defaults to [year-round], the honest answer for most food stalls.
+best_season:
+  year-round: { vi: Quanh năm, en: Year-round, emoji: "🗓️", months: "1–12" }
+  spring:     { vi: Mùa xuân,  en: Spring,     emoji: "🌸", months: "2–4",
+                note_vi: "Mát mẻ, dịp Tết, ít mưa", note_en: "Mild, Tết, least rain" }
+  summer:     { vi: Mùa hè,    en: Summer,     emoji: "☀️", months: "5–8",
+                note_vi: "Nóng; biển, SUP, hoàng hôn", note_en: "Hot; beach, SUP, sunsets" }
+  autumn:     { vi: Mùa thu (mùa mưa), en: "Autumn · rainy season", emoji: "🌧️", months: "9–11",
+                note_vi: "Mùa mưa bão", note_en: "Rain and storm season" }
+  winter:     { vi: Mùa đông,  en: Winter,     emoji: "🧥", months: "12–1",
+                note_vi: "Trời lạnh, mưa phùn, hợp món nóng", note_en: "Cool, drizzly, cosy food weather" }
+
+price_band:
+  "1": { vi: Rẻ,        en: Budget,     glyph: "₫" }
+  "2": { vi: Vừa phải,  en: Mid,        glyph: "₫₫" }
+  "3": { vi: Hơi đắt,   en: Upper-mid,  glyph: "₫₫₫" }
+  "4": { vi: Cao cấp,   en: Premium,    glyph: "₫₫₫₫" }
+
+# Consolidated from V2's 53 free-text values (~30 used exactly once).
+# The old-label → key alias map lives in the migration commit (see git history
+# for scripts/import-csv.mjs) — that is the record of where each old value went.
+vibe:
+  local:            { vi: Bản địa,               en: Local }
+  casual:           { vi: Bình dân,              en: Casual }
+  street-food:      { vi: Ăn vỉa hè,             en: Street food }
+  family-run:       { vi: Quán gia đình,         en: Family-run }
+  quiet:            { vi: Yên tĩnh,              en: Quiet }
+  chill:            { vi: Chill,                 en: Chill }
+  busy:             { vi: Đông khách, sôi động,  en: Busy & lively }
+  airy:             { vi: Thoáng, rộng rãi,      en: Airy }
+  indoor:           { vi: Không gian đóng,       en: Indoor }
+  garden:           { vi: Sân vườn,              en: Garden }
+  green:            { vi: Nhiều cây xanh,        en: Green & shady }
+  nature:           { vi: Thiên nhiên, hoang sơ, en: Nature }
+  rice-fields:      { vi: Cánh đồng lúa,         en: Rice fields }
+  beach:            { vi: Biển,                  en: Beach }
+  sea-view:         { vi: View biển,             en: Sea view }
+  view:             { vi: View đẹp,              en: Great view }
+  riverside:        { vi: Ven sông,              en: Riverside }
+  retro:            { vi: Bao cấp, cổ điển,      en: Retro }
+  roastery:         { vi: Rang xay,              en: Roastery }
+  work-friendly:    { vi: Làm việc tốt,          en: Work-friendly }
+  romantic:         { vi: Lãng mạn,              en: Romantic }
+  live-music:       { vi: Nhạc sống,             en: Live music }
+  dj:               { vi: DJ,                    en: DJ }
+  tourist-friendly: { vi: Thân thiện du khách,   en: Tourist friendly }
+  open-24h:         { vi: Mở 24/24,              en: Open 24h }
+
+good_for:
+  solo:          { vi: Đi một mình,     en: Solo }
+  couple:        { vi: Cặp đôi,         en: Couple }
+  family:        { vi: Gia đình,        en: Family }
+  friends:       { vi: Bạn bè,          en: Friends }
+  group:         { vi: Nhóm bạn,        en: Group }
+  students:      { vi: Sinh viên,       en: Students }
+  work:          { vi: Làm việc,        en: Work }
+  study:         { vi: Học bài,         en: Study }
+  deadline:      { vi: Chạy deadline,   en: Deadline crunch }
+  reading:       { vi: Đọc sách,        en: Reading }
+  coffee-lovers: { vi: Dân mê cà phê,   en: Coffee lovers }
+  vegan:         { vi: Thuần chay,      en: Vegan }
+  vegetarian:    { vi: Ăn chay,         en: Vegetarian }
+
+status:
+  draft:    { vi: Nháp - cần xác minh, en: Draft - verify }
+  verified: { vi: Đã xác minh,         en: Verified }
+  closed:   { vi: Đã đóng cửa,         en: Closed }
+
+relationship:
+  none:             { vi: Không liên quan,        en: No relationship }
+  owner:            { vi: Là chủ quán,            en: Owner }
+  family-or-friend: { vi: Người thân / bạn bè,    en: Family or friend }
+
+duration:
+  under-1h: { vi: Dưới 1 giờ, en: Under 1 hour }
+  1-2h:     { vi: "1–2 giờ",  en: "1–2 hours" }
+  2-3h:     { vi: "2–3 giờ",  en: "2–3 hours" }
+  3-4h:     { vi: "3–4 giờ",  en: "3–4 hours" }
+  half-day: { vi: Nửa ngày,   en: Half day }
+  full-day: { vi: Cả ngày,    en: Full day }

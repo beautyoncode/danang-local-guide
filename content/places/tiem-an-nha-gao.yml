@@ -1,0 +1,38 @@
+slug: tiem-an-nha-gao
+name: Tiệm ăn Nhà Gạo
+type: food
+category: trung-hoa
+area: son-tra
+address: 123 Nguyễn Trung Trực, Sơn Trà, Đà Nẵng
+price_vnd: corn roll 20k
+price_band: "1"
+best_session:
+  - morning
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - family-run
+  - local
+good_for:
+  - solo
+  - family
+must_try:
+  vi: Bánh cuốn gia truyền Quảng Đông (bắp mỹ 20k, cuốn tôm), hoành thánh nước
+  en: Cantonese family-recipe rolls (corn roll 20k; huge fresh shrimp roll), wonton soup
+why_we_go:
+  vi: |-
+    - Quán bán cuốn gia truyền Quảng Đông siêuuu ngon (bánh cuốn bắp mỹ chỉ 20k, cuốn tôm thì siêu to và tươi).
+    - Có hoành thánh nước ngon.
+    - Nói chung menu ngon lắm, ăn là ghiền ó mấy ní.
+  en: Really good Cantonese family-recipe rolls; addictive menu.
+hours_notes:
+  vi: 6 – 10AM, 11 – 13:30PM, 17:00 – 20:30PM
+  en: "Hours: 6–10AM, 11AM–1:30PM, 5–8:30PM."
+link: https://www.facebook.com/p/B%C3%A1nh-Cu%E1%BB%91n-Gia-Truy%E1%BB%81n-Qu%E1%BA%A3ng-%C4%90%C3%B4ng-Ti%E1%BB%87m-Nh%C3%A0-G%E1%BA%A1o-100082244542443/
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

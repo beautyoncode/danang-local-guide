@@ -1,0 +1,34 @@
+slug: hai-san-nam-danh
+name: Hải sản Năm Đảnh
+type: food
+category: hai-san
+area: son-tra
+address: 139/59/38/10 Trần Quang Khải, Thọ Quang, Sơn Trà, Đà Nẵng
+price_band: "2"
+best_session:
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - local
+good_for:
+  - group
+  - family
+must_try:
+  vi: Hải sản
+  en: Seafood
+why_we_go:
+  vi: |-
+    - **Lưu ý:**
+      - Đi sớm 5 – 5:30PM để chọn bàn; quán nghỉ lúc 8:30PM.
+      - Ăn bể bụng và rẻ lắm, nên nếu được hãy nhịn ăn trưa và chuẩn bị men tiêu hóa.
+  en: Cheap and huge portions - skip lunch and bring digestive enzymes.
+hours_notes:
+  vi: Đi sớm 5 – 5:30PM để chọn bàn; quán nghỉ lúc 8:30PM.
+  en: Go early (5–5:30PM) to pick a table; closes 8:30PM.
+link: https://github.com/GraphicDThanh/danang-cuisine
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

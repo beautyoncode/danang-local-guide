@@ -1,0 +1,27 @@
+slug: my-quang-sua-hong-van
+name: Mỳ Quảng Sứa Hồng Vân
+type: food
+category: my-quang
+area: hai-chau
+address: 59 Lê Hồng Phong
+price_band: "2"
+best_session:
+  - lunch
+best_season:
+  - year-round
+vibe:
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Mỳ Quảng sứa
+  en: Jellyfish Mỳ Quảng
+why_we_go:
+  vi: Mỳ Quảng sứa. (Bổ sung ghi chú của bạn.)
+  en: Mỳ Quảng with jellyfish. (Add your own notes.)
+link: https://www.foody.vn/da-nang/mi-quang-sua-hong-van
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

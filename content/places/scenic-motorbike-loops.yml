@@ -1,0 +1,28 @@
+slug: scenic-motorbike-loops
+name: Scenic motorbike loops
+name_vi: Đi dạo xe máy
+type: sights
+category: xe-may
+area: hai-chau
+address: Nguyễn Chí Thanh (one-way, from Lê Duẩn to the end); Phan Châu Trinh (from Nguyễn Văn Linh to the end); Thanh Thủy (from Ông Ích Khiêm to 3/2)
+best_session:
+  - morning
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - green
+good_for:
+  - solo
+why_we_go:
+  vi: |-
+    - Nếu chạy xe máy vòng vòng thì có mấy con đường nhiều cây cối mát như:
+      - Nguyễn Chí Thanh (một chiều), đoạn từ giao Lê Duẩn đến hết đường.
+      - Phan Châu Trinh (một chiều), đoạn từ giao Nguyễn Văn Linh đến hết đường.
+      - Thanh Thủy, đoạn từ giao Ông Ích Khiêm ra đến 3/2.
+  en: Tree-lined, cool streets for an easy motorbike ride.
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

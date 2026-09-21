@@ -1,0 +1,39 @@
+slug: chao-ngheu-co-gio
+name: Cháo nghêu Cô Gió
+type: food
+category: mon-khac
+area: hoi-an
+address: Biển An Bàng, Hội An
+price_vnd: 30k – 50k
+price_band: "1"
+best_session:
+  - morning
+  - lunch
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - casual
+  - busy
+good_for:
+  - solo
+  - couple
+must_try:
+  vi: Cháo nghêu (hoặc cháo xương)
+  en: Clam porridge (or bone porridge)
+why_we_go:
+  vi: |-
+    - Uống cafe xong ghé làm tô cháo ấm lòng quân tử rồi vô Hội An đi dạo là đúng bài luôn.
+    - Quán bán cả ngày (đóng cửa lúc 6PM).
+    - Vì mình là người Đà Nẵng nên thấy nghêu ở đây không ngon bằng nghêu biển Đà Nẵng =)) Nhưng vô Hội An thì món này cũng khá ngon, giá hợp lý, quán đông khách.
+    - Nếu không thích ăn nghêu nuôi thì nên ăn cháo xương nhaa.
+  en: Warming bowl before walking Hoi An. Locals think Da Nang clams are better, but it's good, fair and busy. Prefer bone porridge if you don't like farmed clams.
+hours_notes:
+  vi: Bán cả ngày (đóng cửa lúc 6PM).
+  en: Open all day, closes 6PM.
+link: https://maps.app.goo.gl/jtLLRHHd9jrBoBLJ8
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

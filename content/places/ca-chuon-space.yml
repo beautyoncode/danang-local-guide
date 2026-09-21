@@ -1,0 +1,35 @@
+slug: ca-chuon-space
+name: Cá Chuồn Space
+type: coffee
+category: view-cafe
+area: son-tra
+address: Khu du lịch Biển Đông, Sơn Trà, Đà Nẵng
+price_vnd: trung bình 50k-100k
+price_band: "2"
+best_session:
+  - sunset
+  - evening
+best_season:
+  - summer
+vibe:
+  - sea-view
+good_for:
+  - couple
+  - friends
+why_we_go:
+  vi: |-
+    - Khu du lịch cho gửi xe miễn phí, có thể vào đi dạo trên biển tuỳ thích (free)
+    - Uống nước ngắm biển, ngắm hoàng hôn, ngắm các bạn nữ xinh đẹp chụp hình
+    - Nếu tắm biển có nơi tắm nước ngọt, tolet.
+    - Buổi chiều gió khá to nên mang theo áo khoác.
+    - Tuyệt nhất là đi vào ngày có trăng.
+    ---
+
+    ## <a name="bar-pub"></a> 🍻 Quán Bar / Pub
+  en: Free parking and free stroll on the sea; drinks with sea and sunset views. Fresh-water showers and toilets if you swim. Windy in the afternoon - bring a jacket. Best on a moonlit day.
+link: https://maps.app.goo.gl/ewNPqJHuTFG6saBy6
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

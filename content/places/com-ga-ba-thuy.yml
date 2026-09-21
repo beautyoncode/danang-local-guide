@@ -1,0 +1,35 @@
+slug: com-ga-ba-thuy
+name: Cơm gà bà Thuỷ
+type: food
+category: com
+area: my-an
+address: 279 Chính Hữu
+price_vnd: 45k – 70k
+price_band: "2"
+best_session:
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - family
+  - solo
+  - group
+must_try:
+  vi: Gà luộc tự xé
+  en: Hand-torn boiled chicken rice
+why_we_go:
+  vi: |-
+    - Cơm gà ngon, chất lượng. Quán gia đình, chất lượng gà và giá thích hợp cho khách du lịch, khách yêu thích chất lượng.
+    - Món mình thích nhất là gà luộc tự xé, ăn kèm rau, dưa leo, cà chua và kim chi.
+    - Khi ăn cùng gia đình nên gọi canh riêng sẽ chất lượng hơn — canh rong biển có tôm to rất ngon.
+  en: Family-run place with quality chicken at a fair price. Order the boiled chicken with herbs, cucumber, tomato and kimchi. Order soup separately if eating with family - the seaweed soup with big shrimp is great.
+link: https://share.google/lpQ7m7AdChxZhCmBo
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

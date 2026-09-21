@@ -1,0 +1,33 @@
+slug: bar-libre
+name: Bar Libre
+type: nightlife
+category: chill-bar
+area: hai-chau
+address: 125a Nguyễn Chí Thanh, Hải Châu 1, Hải Châu, Đà Nẵng
+price_band: "2"
+best_session:
+  - evening
+best_season:
+  - year-round
+vibe:
+  - indoor
+  - chill
+  - quiet
+good_for:
+  - friends
+  - group
+why_we_go:
+  vi: |-
+    - Không gian đóng, mở nhạc chill.
+    - Phù hợp muốn đi bar uống bia, trò chuyện mà không ồn ào.
+
+    ---
+
+    ## <a name="spa"></a> 💆 Spa & Massage
+  en: For beer and conversation without the noise.
+link: https://g.page/barlibredanang?share
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh
