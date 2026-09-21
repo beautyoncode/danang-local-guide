@@ -2,7 +2,7 @@
 
 Applies to everything under `content/`, to the generated `README.md` and
 `versions/**`, and to the text published in the Notion workspace generated from
-them. Source code in `scripts/` and `.github/` is covered separately by
+them. Source code in `src/` and `.github/` is covered separately by
 LICENSE-CODE (MIT).
 
 You are free to:

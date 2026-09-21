@@ -44,11 +44,11 @@ jobs:
           NOTION_EXPERIENCES_DS_ID: ${{ vars.NOTION_EXPERIENCES_DS_ID }}
           NOTION_NEIGHBORHOODS_DS_ID: ${{ vars.NOTION_NEIGHBORHOODS_DS_ID }}
           FULL: ${{ inputs.full }}
-        run: node scripts/sync-notion.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: node src/sync-notion.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Regenerate README
         if: ${{ !inputs.dry_run }}
-        run: node scripts/build-readme.mjs
+        run: node src/build-readme.mjs
 
       - name: Commit README if it changed
         if: ${{ !inputs.dry_run }}

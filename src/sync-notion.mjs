@@ -6,7 +6,7 @@
 // page survive every sync. Only the properties listed in SPECS are written;
 // everything else (Photo, EN reviewed, Localness, Value, …) is Notion-owned.
 //
-//   node scripts/sync-notion.mjs [--full] [--dry-run]
+//   node src/sync-notion.mjs [--full] [--dry-run]
 import { createHash } from 'node:crypto';
 import { appendFileSync } from 'node:fs';
 import { loadContent, notionLabel, label } from './lib/content.mjs';

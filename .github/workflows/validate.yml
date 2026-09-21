@@ -4,10 +4,10 @@ name: validate
 # by design. Nothing here talks to Notion.
 on:
   pull_request:
-    paths: ['content/**', 'scripts/**', '.github/workflows/validate.yml', 'package.json']
+    paths: ['content/**', 'src/**', '.github/workflows/validate.yml', 'package.json']
   push:
     branches: [main]
-    paths: ['content/**', 'scripts/**']
+    paths: ['content/**', 'src/**']
 
 permissions:
   contents: read
@@ -21,11 +21,11 @@ jobs:
         with: { node-version: '22', cache: npm }
       - run: npm ci
       - name: Validate content
-        run: node scripts/validate.mjs
+        run: node src/validate.mjs
       - name: README is up to date with content/
         if: always()
         run: |
-          node scripts/build-readme.mjs
+          node src/build-readme.mjs
           if ! git diff --quiet -- README.md versions/README.en.md; then
             echo "::error::README.md is out of date. It is generated — run 'npm run build' and commit the result."
             git --no-pager diff --stat -- README.md versions/README.en.md

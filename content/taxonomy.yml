@@ -2,7 +2,7 @@
 # Notion select/multi-select options render as "<en> · <vi>", emoji-prefixed
 # where an emoji is given — matching the V2 workspace convention.
 #
-# CI (scripts/validate.mjs) rejects any value in content/**/*.yml that is not
+# CI (src/validate.mjs) rejects any value in content/**/*.yml that is not
 # a key here, so the Notion sync can never invent a junk select option.
 
 type:
@@ -91,8 +91,8 @@ price_band:
   "4": { vi: Cao cấp,   en: Premium,    glyph: "₫₫₫₫" }
 
 # Consolidated from V2's 53 free-text values (~30 used exactly once).
-# scripts/import-csv.mjs holds the old-label → key alias map; it is the
-# written record of where each old value went.
+# The old-label → key alias map lives in the migration commit (see git history
+# for scripts/import-csv.mjs) — that is the record of where each old value went.
 vibe:
   local:            { vi: Bản địa,               en: Local }
   casual:           { vi: Bình dân,              en: Casual }

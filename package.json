@@ -6,11 +6,11 @@
     "doc": "docs"
   },
   "scripts": {
-    "validate": "node scripts/validate.mjs",
-    "build": "node scripts/build-readme.mjs",
-    "sync": "node scripts/sync-notion.mjs",
-    "check": "node scripts/validate.mjs && node scripts/build-readme.mjs && node scripts/test-form-script.mjs",
-    "test:form": "node scripts/test-form-script.mjs"
+    "validate": "node src/validate.mjs",
+    "build": "node src/build-readme.mjs",
+    "sync": "node src/sync-notion.mjs",
+    "check": "node src/validate.mjs && node src/build-readme.mjs && node src/test-form-script.mjs",
+    "test:form": "node src/test-form-script.mjs"
   },
   "repository": {
     "type": "git",

@@ -113,7 +113,7 @@ function renderEntry(p, lang, level) {
 
 function build(lang) {
   const t = T[lang];
-  const imgPrefix = lang === 'vi' ? './src' : '../src';
+  const imgPrefix = lang === 'vi' ? './assets' : '../assets';
   const out = [
     '<p align="center">',
     ` <img align="center" alt="WeDanang Logo" src="${imgPrefix}/images/wedanang-logo-landscape.png" />`,
@@ -164,7 +164,7 @@ function build(lang) {
 const orphans = places.filter(p => !sectionOf(p));
 if (orphans.length) {
   console.error(`No README section for: ${orphans.map(p => p.slug).join(', ')}`);
-  console.error('Add a section (or a category to an existing one) in scripts/build-readme.mjs.');
+  console.error('Add a section (or a category to an existing one) in src/build-readme.mjs.');
   process.exit(1);
 }
 

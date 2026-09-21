@@ -3,7 +3,7 @@
 // Apps Script environment, then feeds the YAML it produces through the same
 // validator CI uses. Catches the form and the schema drifting apart.
 //
-//   node scripts/test-form-script.mjs
+//   node src/test-form-script.mjs
 import { readFileSync, writeFileSync, unlinkSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
@@ -72,7 +72,7 @@ delete filled.link;                        // the sample address IS the Maps lin
 filled.link = answer[Q.address][0];
 writeFileSync(file, YAML.stringify(filled, { lineWidth: 0 }));
 try {
-  execFileSync('node', [join(ROOT, 'scripts', 'validate.mjs')], { stdio: 'pipe' });
+  execFileSync('node', [join(ROOT, 'src', 'validate.mjs')], { stdio: 'pipe' });
   console.log('✅ form output passes validate.mjs once category/price_band/vibe/good_for are filled');
 } catch (e) {
   console.error(e.stdout?.toString() ?? e.message);

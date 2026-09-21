@@ -67,7 +67,7 @@ the Script Property; the form itself never changes.
   the response stays in the sheet, and re-running the trigger on that row
   creates the issue. Nothing is lost.
 
-`node scripts/test-form-script.mjs` runs `Code.gs` against a sample submission
+`node src/test-form-script.mjs` runs `Code.gs` against a sample submission
 and feeds its output through the real validator — run it after editing either
 the form questions or `content/taxonomy.yml`.
 

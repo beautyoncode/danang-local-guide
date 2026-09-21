@@ -8,7 +8,7 @@
 > [Tiếng Việt](../../README.md) và [English](../README.en.md).
 
 <p align="center">
- <img align="center" alt="WeDanang Logo" src="../../src/images/wedanang-logo-landscape.png" />
+ <img align="center" alt="WeDanang Logo" src="../../assets/images/wedanang-logo-landscape.png" />
 </p>
 
 **🌐 اللغات / Languages:** [Tiếng Việt](../../README.md) · [English](../README.en.md) · [한국어](./README.ko.md) · [日本語](./README.ja.md) · [中文](./README.zh.md) · [Español](./README.es.md) · **العربية**

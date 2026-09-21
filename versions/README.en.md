@@ -1,5 +1,5 @@
 <p align="center">
- <img align="center" alt="WeDanang Logo" src="../src/images/wedanang-logo-landscape.png" />
+ <img align="center" alt="WeDanang Logo" src="../assets/images/wedanang-logo-landscape.png" />
 </p>
 
 **🌐 Languages:** [Tiếng Việt](../README.md) · **English** · [한국어](./legacy/README.ko.md) · [日本語](./legacy/README.ja.md) · [中文](./legacy/README.zh.md) · [Español](./legacy/README.es.md) · [العربية](./legacy/README.ar.md)

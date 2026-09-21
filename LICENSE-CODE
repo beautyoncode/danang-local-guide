@@ -2,7 +2,7 @@ MIT License
 
 Copyright (c) 2025 Da Nang Local Guide contributors
 
-Applies to the source code in `scripts/` and `.github/`. The guide content is
+Applies to the source code in `src/` and `.github/`. The guide content is
 licensed separately — see LICENSE-CONTENT (CC BY-NC-SA 4.0).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

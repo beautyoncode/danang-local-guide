@@ -1,11 +1,19 @@
 # V3 — Da Nang Local Guide: community repo → auto-synced Notion
 
+> **Status note (added after implementation).** Phases 1 and 2 are built. Paths
+> in this document predate the `src/` refactor: `scripts/*.mjs` now live in
+> `src/`, images in `assets/images/`, and the Notion Build Guide is at
+> [docs/reference/notion-build-guide.md](../reference/notion-build-guide.md).
+> The three V2 CSVs and the original V1 README were migration inputs and have
+> been retired — they are preserved in the migration commit, along with
+> `scripts/import-csv.mjs` and its alias maps.
+
 ## Context
 
 Two assets exist and are drifting apart:
 
 - **V1** — [`GraphicDThanh/danang-cuisine`](https://github.com/GraphicDThanh/danang-cuisine), now flattened into [this repo's root](../../). A 544-line hand-written Vietnamese README plus 6 translated copies in [versions/](../../versions/). Content only. Contribution = "create an issue"; no schema, no review process, no freshness signal.
-- **V2** — a manually built bilingual Notion workspace, specced in [docs/claude-notion-da-nang-local-guide/](../claude-notion-da-nang-local-guide/): 62 places, 9 experiences, 5 neighborhoods as CSVs, a 222-line [build guide](../claude-notion-da-nang-local-guide/00%20-%20Build%20Guide%20(start%20here).md), homepages and a methodology page. Everything is `Data status = Draft - verify`.
+- **V2** — a manually built bilingual Notion workspace, specced in [docs/reference/](../reference/): 62 places, 9 experiences, 5 neighborhoods as CSVs, a 222-line [build guide](../reference/notion-build-guide.md), homepages and a methodology page. Everything is `Data status = Draft - verify`.
 
 The problem: V1 and V2 are **two copies of the same facts**. Every price change has to be made twice, by hand, in a format only the author can edit. Neither has a way for a local to add a place without a maintainer rewriting Markdown. V2's strengths (structured fields — Area, Price band, Best session, Vibe, Good for; a real "Why we go" note per place; `Last checked`) exist nowhere in V1.
 
@@ -81,7 +89,7 @@ The problem: V1 and V2 are **two copies of the same facts**. Every price change 
 
 ## 3. Repository design
 
-Work in the existing repo. Current [README.md](../../README.md) becomes generated output; [src/images/](../../src/images/) stays.
+Work in the existing repo. Current [README.md](../../README.md) becomes generated output; [assets/images/](../../assets/images/) stays.
 
 ```
 content/
@@ -451,11 +459,11 @@ Stated direction: a public **website**, a **membership** tier, a **chatbot** tha
 
 ### Files that will be created or changed
 
-- New: [content/](../../content/), [scripts/](../../scripts/), [.github/](../../.github/), `CONTRIBUTING.md`, `STYLE.md`, `CODE_OF_CONDUCT.md`, `LICENSE-CONTENT`, `LICENSE-CODE`
+- New: [content/](../../content/), [src/](../../src/), [.github/](../../.github/), `CONTRIBUTING.md`, `STYLE.md`, `CODE_OF_CONDUCT.md`, `LICENSE-CONTENT`, `LICENSE-CODE`
 - Rewritten as generated output: [README.md](../../README.md), `versions/README.en.md`
-- Moved: [versions/README.ko.md](../../versions/README.ko.md) and the ja/zh/es/ar siblings → `versions/legacy/`
-- Reused as migration input, then retired: [Places.csv](../claude-notion-da-nang-local-guide/Places.csv), [Experiences.csv](../claude-notion-da-nang-local-guide/Experiences.csv), [Neighborhoods.csv](../claude-notion-da-nang-local-guide/Neighborhoods.csv)
-- Reused as Notion setup reference (property types, views, language layer — Steps 3–8 stay valid): [00 - Build Guide](../claude-notion-da-nang-local-guide/00%20-%20Build%20Guide%20(start%20here).md)
+- Moved: [versions/legacy/README.ko.md](../../versions/legacy/README.ko.md) and the ja/zh/es/ar siblings → `versions/legacy/`
+- Reused as migration input, then retired: `Places.csv`, `Experiences.csv`, `Neighborhoods.csv` (deleted after Phase 1 — see the migration commit)
+- Reused as Notion setup reference (property types, views, language layer — Steps 3–8 stay valid): [Notion Build Guide](../reference/notion-build-guide.md)
 
 ---
 
