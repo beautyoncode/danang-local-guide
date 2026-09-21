@@ -1,0 +1,30 @@
+slug: bun-cha-ca-109
+name: Bún chả cá 109
+type: food
+category: bun
+area: hai-chau
+address: "[109 Nguyễn Chí Thanh, Hải Châu 1, Hải Châu](https://goo.gl/maps/QCTbgwgqLbUwUUFK6)"
+price_vnd: trung bình 30k
+price_band: "1"
+best_session:
+  - morning
+  - lunch
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Bún chả cá
+  en: Bún chả cá (fish cake noodles)
+why_we_go:
+  vi: Bún chả cá giá bình dân, trung bình 30k. (Bổ sung ghi chú của bạn.)
+  en: Fish-cake noodles at around 30k a bowl. (Add your own notes.)
+link: https://goo.gl/maps/QCTbgwgqLbUwUUFK6
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

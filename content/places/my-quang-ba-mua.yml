@@ -1,0 +1,32 @@
+slug: my-quang-ba-mua
+name: Mỳ Quảng Bà Mua
+type: food
+category: my-quang
+area: hai-chau
+address: "[19-21 Trần Bình Trọng, Phước Ninh, Hải Châu](https://goo.gl/maps/Wy4EfWPDSc9nqg3g8)"
+price_vnd: từ 45k
+price_band: "2"
+best_session:
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - local
+  - tourist-friendly
+good_for:
+  - family
+  - group
+  - solo
+must_try:
+  vi: Mỳ Quảng
+  en: Mỳ Quảng
+why_we_go:
+  vi: "- Nên ăn ở Trần Bình Trọng. Dù có nhiều chi nhánh nhưng gia vị không nhất quán — kể cả hũ ớt, chi nhánh Hồ Nghinh đã khác hoàn toàn so với chi nhánh gốc."
+  en: Eat at the original Trần Bình Trọng branch - seasoning is inconsistent across branches (even the chili jar differs, e.g. the Hồ Nghinh branch).
+link: https://www.facebook.com/MonNgonMyQuang
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

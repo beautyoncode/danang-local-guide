@@ -1,0 +1,32 @@
+slug: the-local-beans-186-phan-chau-trinh
+name: The Local Beans (186 Phan Châu Trinh)
+type: coffee
+category: specialty-coffee
+area: hai-chau
+address: 186 Phan Châu Trinh
+price_vnd: 50k–100k
+price_band: "2"
+best_session:
+  - morning
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - view
+  - airy
+good_for:
+  - couple
+  - friends
+  - work
+why_we_go:
+  vi: |-
+    - Cơ sở Premium: view đẹp, không gian thoáng. Phù hợp làm việc, hẹn hò, tụ tập bạn bè.
+    - Giá cao hơn cơ sở 2, tầm 50k – 100k =)))
+    - Cơ sở 2 ở [84 Châu Thị Vĩnh Tế](https://goo.gl/maps/G6bNML96hS74Aetm6) (Mỹ An) rẻ hơn và có working space.
+  en: Premium branch with a nice view and open space - good for work, dates or meeting friends.
+link: https://maps.app.goo.gl/edQf8TPuizwtgbJN7
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

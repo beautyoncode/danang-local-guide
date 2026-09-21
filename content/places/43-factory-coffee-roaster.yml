@@ -1,0 +1,26 @@
+slug: 43-factory-coffee-roaster
+name: 43 Factory Coffee Roaster
+type: coffee
+category: specialty-coffee
+area: my-an
+address: Lô 442 Đường Ngô Thì Sĩ
+price_vnd: 100k trở lên
+price_band: "3"
+best_session:
+  - morning
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - roastery
+good_for:
+  - coffee-lovers
+why_we_go:
+  vi: "- **Phù hợp:** người chuyên thưởng thức cafe rang xay chuyên nghiệp."
+  en: For people who really appreciate professionally roasted coffee.
+link: https://g.page/43factorycoffeeroaster?share
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

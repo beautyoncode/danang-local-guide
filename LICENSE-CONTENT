@@ -1,0 +1,42 @@
+# Content licence — Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+
+Applies to everything under `content/`, to the generated `README.md` and
+`versions/**`, and to the text published in the Notion workspace generated from
+them. Source code in `scripts/` and `.github/` is covered separately by
+LICENSE-CODE (MIT).
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit to *Da Nang Local Guide*
+  and its contributors, provide a link to the licence, and indicate if changes
+  were made.
+- **NonCommercial** — You may not use the material for commercial purposes.
+- **ShareAlike** — If you remix or build upon the material, you must distribute
+  your contributions under the same licence.
+
+Full legal text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+## Contributor grant
+
+By contributing (via pull request, GitHub issue form, or the public submission
+form) you confirm that:
+
+1. The contribution is your own work, or you have the right to submit it.
+2. You licence it to the public under CC BY-NC-SA 4.0, as above.
+3. You additionally grant the Da Nang Local Guide project a **perpetual,
+   worldwide, non-exclusive, royalty-free licence to use, reproduce, adapt,
+   publish and distribute your contribution as part of this project, including
+   in paid products and software services** (for example a compiled edition, a
+   membership tier, a website, a trip-planning assistant, or a mobile app),
+   with credit to contributors.
+
+This grant is what lets the project fund itself without having to re-contact
+every contributor later. It does **not** transfer your copyright, and it does
+not stop you from using your own contribution however you like elsewhere.
+
+You keep the right to have your name removed from attribution on request.

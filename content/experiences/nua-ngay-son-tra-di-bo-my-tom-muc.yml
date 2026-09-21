@@ -1,0 +1,22 @@
+slug: nua-ngay-son-tra-di-bo-my-tom-muc
+name: "Nửa ngày Sơn Trà: đi bộ + mỳ tôm mực"
+name_en: "Son Tra half day: walk + squid noodles"
+session:
+  - morning
+best_season:
+  - year-round
+area: son-tra
+duration: half-day
+good_for:
+  - friends
+  - couple
+stops:
+  - son-tra-walk-guard-station-to-vong-canh-hill
+  - my-tom-muc-thong-thanh
+local_tip:
+  vi: Đi buổi sáng cho mát. Xe tay ga bị chặn ở trạm; cần xe số để chạy tiếp lên.
+  en: Go in the morning to avoid heat. Scooters can't go past the guard station; you need a manual bike to go further.
+status: draft
+last_checked: 2026-09-21
+contributed_by:
+  - GraphicDThanh

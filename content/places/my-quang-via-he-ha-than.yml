@@ -1,0 +1,37 @@
+slug: my-quang-via-he-ha-than
+name: Mỳ Quảng Vỉa Hè (Hà Thân)
+type: food
+category: my-quang
+area: son-tra
+address: Ngã tư viện kiểm sát Sơn Trà và chợ Hà Thân =)), đối diện xéo chỗ công viên
+price_vnd: 15k – 20k
+price_band: "1"
+best_session:
+  - early-morning
+  - morning
+best_season:
+  - year-round
+vibe:
+  - street-food
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Mỳ Quảng
+  en: Mỳ Quảng
+why_we_go:
+  vi: |-
+    - Chỉ bán sáng sớm (6 – 8AM), tầm 8h là hết.
+    - Mỳ Quảng siêu ngonnn (chưa ăn chỗ nào ngon hơn và rẻ hơn).
+    - Cô này sáng nào cũng đi xe từ Quảng Nam ra bán, rau quê nên ăn xả láng luôn.
+    - Tô mỳ khổng lồ — nữ ăn nhớ dặn bỏ ít mỳ, chứ cô quen tay bỏ nhiều lắm @@
+  en: Best and cheapest Mỳ Quảng we know. The seller comes from Quảng Nam every morning with village greens. Huge bowl - women may want to ask for less noodles.
+hours_notes:
+  vi: Chỉ bán sáng sớm 6 – 8AM, tầm 8h là hết.
+  en: 6–8AM only, sold out around 8AM.
+link: https://maps.app.goo.gl/3UofRQcmJy12LZc37
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

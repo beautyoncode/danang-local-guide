@@ -1,0 +1,36 @@
+slug: bun-cha-ha-noi-huy-can
+name: Bún chả Hà Nội (Huy Cận)
+type: food
+category: bun
+area: hai-chau
+address: ngã 4 — đối diện 86 Huy Cận, Hòa Cường Nam, Hải Châu, Đà Nẵng
+price_vnd: 20k / tô
+price_band: "1"
+best_session:
+  - morning
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Bún chả
+  en: Bún chả
+why_we_go:
+  vi: |-
+    - Chị chủ người Đà Nẵng làm nhưng vẫn giữ hương vị bún chả Hà Nội. Giá phải chăng, ăn vừa đủ no. Ông anh mình sáng nào cũng ăn (gần như không bỏ ngày nào).
+    - **Lưu ý:**
+      - Đây là quán ăn sáng.
+      - Ăn xong tô bún có thể qua quán cafe đối diện — [White Cafe](https://www.foody.vn/da-nang/white-cafe-86-huy-can) làm 1 cốc cafe muối cho đủ combo buổi sáng.
+  en: Owner is from Da Nang but keeps the Hanoi flavor. Cheap and filling; one local eats here almost every morning. Cross the street to White Cafe for a salt coffee to complete the morning combo.
+hours_notes:
+  vi: Quán ăn sáng.
+  en: Breakfast spot.
+link: https://goo.gl/maps/GSWwQxsTqqd69fnq8
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

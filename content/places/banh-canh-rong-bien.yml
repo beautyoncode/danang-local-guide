@@ -1,0 +1,32 @@
+slug: banh-canh-rong-bien
+name: Bánh canh rong biển
+type: food
+category: banh-canh
+area: hai-chau
+address: 92 Huỳnh Thúc Kháng
+price_vnd: 30k / tô
+price_band: "1"
+best_session:
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - casual
+good_for:
+  - solo
+must_try:
+  vi: Bánh canh rong biển
+  en: Seaweed bánh canh
+why_we_go:
+  vi: "- Quán bán bánh canh rong biển (bột lọc, bột gạo lứt, bột mỳ). Ngon, bán cả ngày."
+  en: Seaweed bánh canh (tapioca, brown rice or wheat noodles). Tasty and open all day.
+hours_notes:
+  vi: Bán cả ngày.
+  en: Open all day.
+link: https://share.google/89aLSOasmMfqpH5S0
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

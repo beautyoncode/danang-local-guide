@@ -1,0 +1,31 @@
+slug: com-ga-hong-ngoc
+name: Cơm gà Hồng Ngọc
+type: food
+category: com
+area: hai-chau
+address: 193 Nguyễn Chí Thanh
+price_vnd: 45k – 70k
+price_band: "2"
+best_session:
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - family
+  - group
+must_try:
+  vi: Cơm gà
+  en: Chicken rice
+why_we_go:
+  vi: "- Cơm gà ngon nổi tiếng ở Đà Nẵng. Quán rộng rãi, phục vụ được số lượng khách lớn."
+  en: Well-known chicken rice in Da Nang. Spacious, handles big groups.
+link: https://share.google/dB9BS4xg5DP9phOMa
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

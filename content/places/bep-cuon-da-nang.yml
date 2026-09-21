@@ -1,0 +1,34 @@
+slug: bep-cuon-da-nang
+name: Bếp Cuốn Đà Nẵng
+type: food
+category: mon-khac
+area: my-an
+address: 54 Nguyễn Văn Thoại, Mỹ An, Ngũ Hành Sơn
+price_vnd: tương đối cao so với mặt bằng (tầm 100k / món)
+price_band: "3"
+best_session:
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - casual
+  - tourist-friendly
+good_for:
+  - couple
+  - family
+  - group
+must_try:
+  vi: Mẹt Bếp Cuốn
+  en: Mẹt Bếp Cuốn (sharing platter)
+why_we_go:
+  vi: |-
+    - Quán bán nhiều món ăn Việt Nam, có cả cơm theo set hoặc gọi món.
+    - Recommend gọi "Mẹt Bếp Cuốn" — đầy đủ các món rất ngon.
+    - Phù hợp với 2 người hoặc nhóm bạn, gia đình.
+  en: Pricier than average but many Vietnamese dishes, set meals or à la carte. Order the sharing platter. Best for 2 people or a group.
+link: https://goo.gl/maps/harPD6sjbPHPxpYQ7
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

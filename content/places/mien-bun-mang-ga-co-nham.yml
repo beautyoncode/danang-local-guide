@@ -1,0 +1,40 @@
+slug: mien-bun-mang-ga-co-nham
+name: Miến & Bún măng gà Cô Nhâm
+type: food
+category: bun
+area: hoa-xuan
+address: 22 Tố Hữu, Đà Nẵng
+price_vnd: Miến 30k; Bún 25k
+price_band: "1"
+best_session:
+  - morning
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Miến măng gà (30k), Bún măng gà (25k)
+  en: Miến măng gà (30k), Bún măng gà (25k)
+why_we_go:
+  vi: |-
+    - Quán phục vụ đồ ăn sáng.
+    - **Món ăn:**
+      - Miến Măng Gà (30k)
+      - Bún Măng Gà (25k)
+
+    ---
+
+    ## <a name="cafe"></a> ☕ Quán Cà phê
+  en: Breakfast noodles with chicken and bamboo shoots.
+hours_notes:
+  vi: Đồ ăn sáng.
+  en: Breakfast.
+link: https://g.co/kgs/8Ke23Ni
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

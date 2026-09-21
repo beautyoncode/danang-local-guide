@@ -1,0 +1,31 @@
+slug: sound-of-silence-coffee-shop
+name: Sound Of Silence Coffee Shop
+type: coffee
+category: view-cafe
+area: hoi-an
+address: 40 Nguyễn Phan Vinh, Hội An
+price_vnd: 50k – 100k
+price_band: "2"
+best_session:
+  - afternoon
+  - sunset
+best_season:
+  - year-round
+vibe:
+  - sea-view
+  - quiet
+  - garden
+good_for:
+  - couple
+  - solo
+why_we_go:
+  vi: |-
+    - Nếu chọn 1 quán cafe Hội An thì mình chọn quán này. Vườn đẹp, view biển trực diện từ trên cao.
+    - Cần một chốn bình yên ngồi ngắm biển và nghe tiếng sóng vỗ thì đây là nơi lý tưởng nhất. Buổi chiều có thể có gió, nên mang theo áo khoác.
+  en: "Our pick if you choose one cafe in Hoi An: beautiful garden and head-on sea view from above. Windy in the afternoon - bring a jacket."
+link: https://maps.app.goo.gl/cBDFqon9jb3LWUKZ9
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

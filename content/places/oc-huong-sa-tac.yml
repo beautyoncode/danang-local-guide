@@ -1,0 +1,39 @@
+slug: oc-huong-sa-tac
+name: Ốc hương sả tắc
+type: food
+category: hai-san
+area: hoi-an
+address: 155 Tôn Đức Thắng, Hội An Tây, Đà Nẵng
+price_vnd: 80k – 150k / món
+price_band: "2"
+best_session:
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - local
+  - busy
+good_for:
+  - group
+  - friends
+must_try:
+  vi: Ốc hương xào sả tắc
+  en: Sweet snails stir-fried with lemongrass and kumquat
+why_we_go:
+  vi: |-
+    - Chỉ mở buổi tối từ 4PM.
+    - Quán ốc ngon nhất ở Hội An. Món ốc hương xào sả tắc siêu ngon, ốc hương tươi và to, giá hợp lý. Ngoài ra còn ốc len xào dừa, ốc móng tay xào me, sò điệp nướng mỡ hành... Quán đông khách nên đến sớm để tránh chờ lâu.
+
+    ---
+
+    <p align="center"><strong>🥰 Enjoy Your DaNang And Share With Us 🥰</strong></p>
+  en: "Best snail place in Hoi An: fresh, big sweet snails and reasonable prices. Also coconut stir-fried snails, tamarind razor clams, grilled scallops. Go early to avoid waiting."
+hours_notes:
+  vi: Chỉ mở buổi tối từ 4PM.
+  en: Open from 4PM.
+link: https://maps.app.goo.gl/vFqEZ5S7RCACJAXZ8
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,34 @@
+slug: com-nha-vui-lau-rieu-ha-noi
+name: Cơm Nhà Vui - Lẩu Riêu Hà Nội
+type: food
+category: com
+area: hai-chau
+address: |-
+  - CS1: 86 Đường 2/9, Hải Châu, Đà Nẵng
+  - CS2: 133 Hà Bổng, Sơn Trà, Đà Nẵng
+price_vnd: tương đối rẻ
+price_band: "2"
+best_session:
+  - lunch
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - group
+  - family
+must_try:
+  vi: Cơm nhà, lẩu riêu Hà Nội
+  en: Home-style rice, Hanoi lẩu riêu
+why_we_go:
+  vi: |-
+    - Quán phục vụ cơm trưa, ngon như cơm nhà. Bán nhiều món ăn Việt Nam, có cả cơm theo set hoặc gọi món.
+    - Phù hợp với nhóm bạn hoặc gia đình.
+  en: Lunch that tastes like home cooking; set meals or à la carte. Relatively cheap.
+link: https://goo.gl/maps/apk8Eg4Wgmtu9Q7D8
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

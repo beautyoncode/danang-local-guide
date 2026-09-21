@@ -1,0 +1,38 @@
+slug: banh-canh-ca-co-cuc
+name: Bánh canh cá Cô Cúc
+type: food
+category: banh-canh
+area: hai-chau
+address: 82-84 Bùi Dương Lịch
+price_vnd: 12k / tô
+price_band: "1"
+best_session:
+  - dinner
+  - evening
+best_season:
+  - year-round
+vibe:
+  - street-food
+  - local
+good_for:
+  - solo
+  - group
+must_try:
+  vi: Bánh canh; nem chua, chả, cá nục nướng, nước mía
+  en: Bánh canh; nem chua, chả, grilled fish, sugarcane juice
+why_we_go:
+  vi: |-
+    - Chỉ bán chiều tối.
+    - Dân bên này gọi món này là "bánh canh heo" vì nấu nồi to, múc ẩu như nấu cho heo ăn vậy đó =)))
+    - Tự phục vụ: xếp hàng đợi lấy bánh canh, ăn xong tự gọi tính tiền vì đông quá người ta không phục vụ tận nơi.
+    - Có thêm nem chua, chả và cá nục nướng ăn kèm nếu thích. Thêm ly nước mía nữa là đúng bài. Ăn nhiều lắm mới hết 50k.
+  en: "Locals call it \"pig's bánh canh\" (big pot, ladled roughly). Self-service: queue for your bowl, then call to pay. You'd struggle to spend over 50k."
+hours_notes:
+  vi: Chỉ bán chiều tối.
+  en: Evening only.
+link: https://www.foody.vn/da-nang/banh-canh-ca-nuong
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

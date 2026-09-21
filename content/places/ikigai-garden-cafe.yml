@@ -1,0 +1,32 @@
+slug: ikigai-garden-cafe
+name: Ikigai Garden Cafe
+type: coffee
+category: garden-cafe
+area: hai-chau
+address: |-
+  - [60 Nguyễn Chí Thanh, Đà Nẵng](https://goo.gl/maps/TcaiH36iviJLiCgd7)
+  - [218/8 Đống Đa, Đà Nẵng](https://g.page/breadnsalt?share)
+price_vnd: trung bình từ 22k
+price_band: "1"
+best_session:
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - garden
+  - airy
+good_for:
+  - family
+  - friends
+why_we_go:
+  vi: "- Không gian rộng rãi, thoáng mát, nhiều cây xanh. Phù hợp thư giãn những ngày cuối tuần với bạn bè và gia đình."
+  en: Spacious, airy and green - relaxed weekends with friends and family.
+hours_notes:
+  vi: 7:30 – 22:30
+  en: 7:30–22:30
+link: https://goo.gl/maps/TcaiH36iviJLiCgd7
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

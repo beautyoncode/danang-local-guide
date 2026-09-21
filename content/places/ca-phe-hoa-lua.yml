@@ -1,0 +1,30 @@
+slug: ca-phe-hoa-lua
+name: Cà phê Hoa Lúa
+type: coffee
+category: view-cafe
+area: hoi-an
+address: Khối An Mỹ, Hội An Đông, Đà Nẵng
+price_vnd: 20k – 50k
+price_band: "1"
+best_session:
+  - sunset
+best_season:
+  - summer
+  - spring
+vibe:
+  - rice-fields
+  - airy
+good_for:
+  - couple
+  - friends
+why_we_go:
+  vi: |-
+    - View đẹp, không gian thoáng mát, phù hợp ngắm hoàng hôn và đi dạo trên cánh đồng. Hít hà mùi lúa chín và cái không gian mà phố thị còn lâu mới có.
+    - Đẹp nhất vào mùa lúa non và lúa chín.
+  en: Airy cafe for sunset and walking through the fields; best in the young-rice and ripe-rice seasons.
+link: https://maps.app.goo.gl/GpR6HVRydNHiHfTg9
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

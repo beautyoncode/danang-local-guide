@@ -1,0 +1,23 @@
+slug: sang-da-nang-ban-dia-di-dao-pho-bun-cha-cafe-muoi
+name: "Sáng Đà Nẵng bản địa: đi dạo phố + bún chả + cafe muối"
+name_en: "Local Da Nang Morning: city walk + bún chả + salt coffee"
+session:
+  - morning
+best_season:
+  - year-round
+area: hai-chau
+duration: 2-3h
+good_for:
+  - solo
+  - couple
+stops:
+  - city-walk-nguyen-chi-thanh-le-loi-loop
+  - bun-cha-ha-noi-huy-can
+  - ca-phe-muoi-hue
+local_tip:
+  vi: Bắt đầu 7–9AM. Bún chả Hà Nội chỉ bán sáng; quán cafe đối diện có cafe muối.
+  en: Start 7–9AM. Bún chả Hà Nội is a breakfast-only stall; the cafe across the street does a salt coffee.
+status: draft
+last_checked: 2026-09-21
+contributed_by:
+  - GraphicDThanh

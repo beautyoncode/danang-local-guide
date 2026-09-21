@@ -1,0 +1,35 @@
+slug: khau-ca-phe
+name: Khâu Cà phê
+type: coffee
+category: garden-cafe
+area: hai-chau
+address: 75/18 Lê Hồng Phong, Hải Châu, Đà Nẵng
+price_vnd: 30k – 50k
+price_band: "1"
+best_session:
+  - morning
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - garden
+  - quiet
+  - work-friendly
+good_for:
+  - solo
+  - friends
+  - work
+why_we_go:
+  vi: |-
+    - Một khu vườn để thở và trò chuyện cùng bạn bè, gia đình.
+    - Nơi trốn văn phòng ngồi làm việc giữa một màu xanh.
+  en: A garden to breathe and talk in, and a place to escape the office and work among greenery.
+hours_notes:
+  vi: 6AM – 11PM
+  en: 6AM–11PM
+link: https://maps.app.goo.gl/vGHTu74EkCSByeJi8
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,23 @@
+slug: nua-ngay-hoi-an-cafe-view-bien-chao-oc
+name: "Nửa ngày Hội An: cafe view biển + cháo + ốc"
+name_en: "Hoi An half day: sea-view coffee + porridge + snails"
+session:
+  - afternoon
+best_season:
+  - year-round
+area: hoi-an
+duration: half-day
+good_for:
+  - couple
+  - friends
+stops:
+  - sound-of-silence-coffee-shop
+  - chao-ngheu-co-gio
+  - oc-huong-sa-tac
+local_tip:
+  vi: Quán ốc mở từ 4PM và rất đông - đến sớm. Quán cháo đóng cửa lúc 6PM.
+  en: Snail place opens at 4PM and gets busy - go early. Porridge place closes at 6PM.
+status: draft
+last_checked: 2026-09-21
+contributed_by:
+  - GraphicDThanh

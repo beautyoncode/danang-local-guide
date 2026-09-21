@@ -1,0 +1,34 @@
+slug: ca-phe-muoi-hue
+name: Cà Phê Muối Huế
+type: coffee
+category: local-coffee
+area: hai-chau
+address: 254 Trần Phú
+price_vnd: 30k – 50k
+price_band: "1"
+best_session:
+  - early-morning
+  - morning
+best_season:
+  - year-round
+vibe:
+  - quiet
+  - green
+  - local
+good_for:
+  - solo
+  - couple
+must_try:
+  vi: Cà phê muối
+  en: Salt coffee
+why_we_go:
+  vi: |-
+    - Thích hợp nhất ngồi vào sáng sớm, lúc không khí còn trong lành, đường yên tĩnh và cây xanh ngập các góc nhìn. Đối diện còn có đàn bồ câu hay được nhà bên cho ăn =))
+    - Cà phê muối ngon, giá bình dân.
+  en: Best in the early morning when the street is quiet and green; pigeons across the street. Good salt coffee at everyday prices.
+link: https://maps.app.goo.gl/ena1wh66ctUFBcWv6
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

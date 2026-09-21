@@ -1,0 +1,27 @@
+slug: oq-lounge-pub-dnd
+name: OQ Lounge Pub DnD
+type: nightlife
+category: club-dj
+area: hai-chau
+address: 18-20 Bạch Đằng, Hải Châu, Đà Nẵng
+price_band: "1"
+best_session:
+  - late-night
+best_season:
+  - year-round
+vibe:
+  - indoor
+  - dj
+good_for:
+  - friends
+why_we_go:
+  vi: |-
+    - Không gian đóng, DJ.
+    - Giá thành rẻ, phù hợp mọi giới trẻ.
+  en: Indoor, DJ, cheap and suitable for young crowds.
+link: https://goo.gl/maps/C8mQtnJQTRYPJ9KV7
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

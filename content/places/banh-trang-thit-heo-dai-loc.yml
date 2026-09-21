@@ -1,0 +1,29 @@
+slug: banh-trang-thit-heo-dai-loc
+name: Bánh tráng thịt heo Đại Lộc
+type: food
+category: mon-khac
+area: hai-chau
+address: 97 Trưng Nữ Vương
+price_band: "2"
+best_session:
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - local
+good_for:
+  - group
+  - family
+must_try:
+  vi: Bánh tráng thịt heo
+  en: Rice paper with pork
+why_we_go:
+  vi: Bánh tráng thịt heo. (Bổ sung ghi chú của bạn.)
+  en: Rice paper with pork. (Add your own notes.)
+link: https://www.facebook.com/QuanDaiLoc.97TrungNuVuong/
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

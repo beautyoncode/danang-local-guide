@@ -1,0 +1,28 @@
+{
+  "name": "danang-local-guide",
+  "version": "3.0.0",
+  "description": "Structured, community-maintained guide to Da Nang. content/**/*.yml is the source of truth; README and Notion are generated views.",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build-readme.mjs",
+    "sync": "node scripts/sync-notion.mjs",
+    "check": "node scripts/validate.mjs && node scripts/build-readme.mjs && node scripts/test-form-script.mjs",
+    "test:form": "node scripts/test-form-script.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-beautyoncode:beautyoncode/danang-local-guide.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "yaml": "^2.9.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

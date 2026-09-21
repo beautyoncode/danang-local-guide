@@ -1,0 +1,35 @@
+slug: chickpea-eatery-da-nang
+name: Chickpea Eatery (Da Nang)
+name_vi: Chickpea Eatery — Vegan / Thuần Chay
+type: food
+category: thuan-chay
+area: hai-chau
+address: |-
+  - 73/12 Trương Định, Đà Nẵng
+  - 86/5 Phan Châu Trinh, Hội An
+price_band: "2"
+best_session:
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - tourist-friendly
+good_for:
+  - vegetarian
+  - vegan
+  - solo
+must_try:
+  vi: Món thuần chay
+  en: Vegan menu
+why_we_go:
+  vi: |-
+    - Ai ăn thuần chay, hoặc đi ĐN vào ngày ăn chay thì quán này là best.
+    - Vào đây sẽ gặp rất nhiều Tây :)) vì cô chủ là founder của ["Xuân Tú Vietnam Tour"](https://xuantuvietnamtours.com/) — 1st private tour guide ở ĐN.
+  en: Best pick for vegans or on Buddhist vegetarian days. You'll meet many foreigners; the owner founded a private tour company. Second branch in Hoi An (86/5 Phan Châu Trinh).
+link: https://www.facebook.com/chickpea.eatery
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

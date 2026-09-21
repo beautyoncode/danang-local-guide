@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Local env — never commit the Notion token
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp

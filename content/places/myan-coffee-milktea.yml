@@ -1,0 +1,31 @@
+slug: myan-coffee-milktea
+name: MYAN Coffee & Milktea
+type: coffee
+category: garden-cafe
+area: hai-chau
+address: |-
+  - [K55/15 Nguyễn Chí Thanh, Đà Nẵng](https://goo.gl/maps/jKawsJSFbFpaTJwD7)
+  - [925/11 Ngô Quyền, Đà Nẵng](https://goo.gl/maps/doTFi3Bft1oLi6Ba9)
+price_vnd: trung bình 25k – 30k; có bán bánh
+price_band: "1"
+best_session:
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - garden
+  - retro
+good_for:
+  - friends
+why_we_go:
+  vi: "- Quán phong cách sân vườn, retro thiên hướng hiện đại. Phù hợp thư giãn với bạn bè dịp cuối tuần."
+  en: Garden style, retro-modern. Good for weekends with friends. Sells cakes.
+hours_notes:
+  vi: 7:00 – 22:15
+  en: 7:00–22:15
+link: https://www.facebook.com/myankit273
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

@@ -1,0 +1,32 @@
+slug: banh-canh-ca-loc-hien
+name: Bánh canh cá lóc Hiền
+type: food
+category: banh-canh
+area: hai-chau
+address: 134 Huỳnh Thúc Kháng
+price_vnd: 25k / tô; nem, chả 5k
+price_band: "1"
+best_session:
+  - lunch
+  - dinner
+best_season:
+  - year-round
+vibe:
+  - casual
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Bánh canh Quảng Trị; bánh ướt lòng heo; bún mắm
+  en: Quảng Trị-style bánh canh; bánh ướt lòng heo; bún mắm
+why_we_go:
+  vi: |-
+    - Quán bán bánh canh Quảng Trị, bánh ướt lòng heo, bún mắm.
+    - Bánh canh ngon, cay. Ai thích ăn hành, gọi nhiều hành giải cảm thì đúng bài luôn.
+  en: Spicy, flavorful bánh canh - order plenty of scallion.
+link: https://www.foody.vn/da-nang/quan-hien-dac-san-quang-tri-huynh-thuc-khang
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

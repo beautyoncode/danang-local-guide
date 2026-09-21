@@ -1,0 +1,38 @@
+slug: breakfast-stalls-nguyen-chi-thanh-hai-phong
+name: Breakfast stalls (Nguyễn Chí Thanh × Hải Phòng)
+name_vi: Nhóm bán đồ ăn sáng
+type: food
+category: an-sang
+area: hai-chau
+address: Ngã ba Nguyễn Chí Thanh và Hải Phòng, đối diện The Coffee House, bên cạnh trường THPT Phan Châu Trinh
+price_vnd: Egg baguette 10k–15k
+price_band: "1"
+best_session:
+  - morning
+best_season:
+  - year-round
+vibe:
+  - street-food
+  - local
+good_for:
+  - solo
+must_try:
+  vi: Bánh mỳ ốp la, xôi, bánh ướt, bánh tiêu, bánh bò
+  en: Bánh mì ốp la (fried egg baguette), xôi, bánh ướt, bánh tiêu
+why_we_go:
+  vi: |-
+    - Chỉ bán sáng, chủ yếu bán cho học sinh, giá rẻ.
+    - **Món ăn:**
+      - Bánh mỳ ốp la → ngonnn (ốp la 1 trứng 10k, 2 trứng 15k)
+      - Xôi, bánh ướt
+      - Sữa và các loại bánh tiêu, bánh bò, bánh da heo
+  en: Cheap student breakfast stalls; the fried-egg baguette is excellent.
+hours_notes:
+  vi: Chỉ bán sáng.
+  en: Morning only.
+link: https://goo.gl/maps/mJ5UCLW1AgQPLXcV8
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

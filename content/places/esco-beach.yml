@@ -1,0 +1,30 @@
+slug: esco-beach
+name: Esco Beach
+type: nightlife
+category: beach-bar
+area: son-tra
+address: Lô 12 Võ Nguyên Giáp
+price_vnd: 70k – 900k (đi sớm trước 19:00 giảm giá tầm 10 – 20%)
+price_band: "3"
+best_session:
+  - sunset
+  - evening
+best_season:
+  - year-round
+vibe:
+  - sea-view
+  - romantic
+good_for:
+  - couple
+  - friends
+why_we_go:
+  vi: |-
+    - Dọc biển, view đỉnh cao núi Sơn Trà. Ngồi vào đêm có trăng và trời hè is the best.
+    - Tỏ tình, tâm sự, cầu hôn thì best of the best =)) Chán đời ngồi chill chill cũng best luôn.
+  en: Beachfront with Son Tra mountain views - best on a moonlit summer night. Go before 7PM for ~10–20% off.
+link: https://www.google.com/maps/contrib/102723144515683239966
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

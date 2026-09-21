@@ -1,0 +1,33 @@
+name: validate
+
+# Runs on pull requests from forks, so this workflow has NO access to secrets
+# by design. Nothing here talks to Notion.
+on:
+  pull_request:
+    paths: ['content/**', 'scripts/**', '.github/workflows/validate.yml', 'package.json']
+  push:
+    branches: [main]
+    paths: ['content/**', 'scripts/**']
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22', cache: npm }
+      - run: npm ci
+      - name: Validate content
+        run: node scripts/validate.mjs
+      - name: README is up to date with content/
+        if: always()
+        run: |
+          node scripts/build-readme.mjs
+          if ! git diff --quiet -- README.md versions/README.en.md; then
+            echo "::error::README.md is out of date. It is generated — run 'npm run build' and commit the result."
+            git --no-pager diff --stat -- README.md versions/README.en.md
+            exit 1
+          fi

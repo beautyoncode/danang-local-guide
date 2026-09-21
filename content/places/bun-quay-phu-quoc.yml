@@ -1,0 +1,29 @@
+slug: bun-quay-phu-quoc
+name: Bún Quậy Phú Quốc
+type: food
+category: bun
+area: hai-chau
+address: 61 Huỳnh Thúc Kháng
+price_vnd: 40k – 60k / tô
+price_band: "1"
+best_session:
+  - lunch
+best_season:
+  - year-round
+vibe:
+  - casual
+good_for:
+  - solo
+  - group
+must_try:
+  vi: Bún quậy hải sản
+  en: Bún quậy with fresh seafood
+why_we_go:
+  vi: "- Bún tươi làm tại chỗ, hải sản tươi, ngon. Phù hợp đi một mình hoặc ít người."
+  en: Fresh noodles made on the spot and fresh seafood. Good for solo or small groups.
+link: https://g.page/bunquaydacsanphuquoc?share
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

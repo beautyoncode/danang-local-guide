@@ -1,0 +1,33 @@
+slug: ca-phe-long
+name: Cà phê Long
+type: coffee
+category: local-coffee
+area: hai-chau
+address: 123 Lê Lợi
+price_vnd: 10k – 30k
+price_band: "1"
+best_session:
+  - early-morning
+  - morning
+best_season:
+  - year-round
+vibe:
+  - retro
+  - local
+good_for:
+  - solo
+why_we_go:
+  vi: |-
+    - Cafe lâu đời nhất ngay trung tâm TP, hơn 30 năm.
+    - Quán không bao giờ vắng khách, chủ yếu lứa khách trung trung, có hút thuốc.
+    - Đặc biệt quán có các cô chú làm lâu năm, phục vụ toàn thời gian, có nơi ở tại quán + đóng bảo hiểm như công việc toàn thời gian.
+  en: Oldest cafe in the city center (30+ years); always busy, mostly middle-aged locals. Smoking allowed. Long-serving staff work full-time with housing and insurance.
+hours_notes:
+  vi: 6AM – 6PM
+  en: 6AM–6PM
+link: https://goo.gl/maps/LKjuWcahSAUTvGRg7
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh

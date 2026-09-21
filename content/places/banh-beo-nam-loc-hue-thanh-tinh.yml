@@ -1,0 +1,38 @@
+slug: banh-beo-nam-loc-hue-thanh-tinh
+name: Bánh bèo - Nậm & Lọc Huế (Thanh Tịnh)
+type: food
+category: mon-khac
+area: lien-chieu
+address: 59 Thanh Tịnh, Liên Chiểu, ĐN
+price_vnd: 6k – 30k
+price_band: "1"
+best_session:
+  - lunch
+  - afternoon
+best_season:
+  - year-round
+vibe:
+  - local
+  - busy
+good_for:
+  - group
+  - family
+must_try:
+  vi: Bánh bèo chén, lọc, nậm, bánh ướt, nem, chả, sữa chua (6k)
+  en: Bánh bèo, lọc, nậm, bánh ướt, nem, chả, yogurt (6k)
+why_we_go:
+  vi: |-
+    - Món: bèo chén, lọc, nậm, bánh ướt, nem, chả, sữa chua — gọi theo dĩa (nhỏ / lớn).
+    - Bán trưa tới chiều (hết sớm tầm 6PM).
+    - Quán siêu đông vì bắt rất đông khách, có thể gọi là đại bản doanh bánh bèo, lọc, nậm Huế. Nếu đi Huế chỉ để ăn mấy món này thì ăn ở đây cũng được =))
+    - Món sữa chua siêu ngon chỉ 6k.
+  en: Very busy - the home base for Hue-style bèo, lọc and nậm. The 6k yogurt is great.
+hours_notes:
+  vi: Bán trưa tới chiều (hết sớm tầm 6PM); gọi theo dĩa nhỏ / lớn.
+  en: Lunch to ~6PM, sells out early. Order by small/large plate.
+link: https://www.foody.vn/da-nang/quan-van-nguyen-nhu-hanh
+status: draft
+last_checked: 2026-09-21
+relationship: none
+contributed_by:
+  - GraphicDThanh
