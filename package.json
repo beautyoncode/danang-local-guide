@@ -8,9 +8,10 @@
   "scripts": {
     "validate": "node src/validate.mjs",
     "build": "node src/build-readme.mjs",
-    "sync": "node src/sync-notion.mjs",
+    "sync": "node --env-file-if-exists=.env src/sync-notion.mjs",
     "check": "node src/validate.mjs && node src/build-readme.mjs && node src/test-form-script.mjs",
-    "test:form": "node src/test-form-script.mjs"
+    "test:form": "node src/test-form-script.mjs",
+    "notion:ids": "node --env-file-if-exists=.env src/notion-ids.mjs"
   },
   "repository": {
     "type": "git",
