@@ -1,0 +1,14 @@
+# Blank issues are off so every report arrives in a shape triage can parse.
+blank_issues_enabled: false
+contact_links:
+  - name: "📖 Đọc hướng dẫn đóng góp / Read the contributing guide"
+    url: https://github.com/beautyoncode/danang-local-guide/blob/main/CONTRIBUTING.md
+    about: "Cách thêm địa điểm, cách viết, và quy trình duyệt. / How to add a place, how to write, and how review works."
+  - name: "✍️ Cách viết / Writing style"
+    url: https://github.com/beautyoncode/danang-local-guide/blob/main/STYLE.md
+    about: "Viết sao cho giống lời một người bạn. / What a good entry sounds like."
+# TODO: add the public Google Form here once it exists, as the first entry —
+# it is the only path that needs no GitHub account:
+#   - name: "📱 Gửi qua form (không cần tài khoản GitHub) / Submit via form (no GitHub account)"
+#     url: https://forms.gle/xxxxxxxx
+#     about: "Điền từ điện thoại, tụi mình lo phần còn lại. / Fill it in from your phone; we handle the rest."

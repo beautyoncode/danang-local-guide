@@ -1,0 +1,132 @@
+name: "➕ Thêm địa điểm mới / Add a place"
+description: "Giới thiệu một quán, quán cafe, bar, spa hoặc chỗ đi chơi bạn đã tới. / Suggest a place you have actually been to."
+title: "[new] "
+labels: ["new-place", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn! Chỉ giới thiệu chỗ **bạn đã tự đi**. Viết tiếng Việt là đủ — tụi mình sẽ dịch.
+
+        Thanks! Only suggest places **you have been to yourself**. Vietnamese alone is fine — we'll translate.
+
+  - type: input
+    id: name
+    attributes:
+      label: "Tên quán / Place name"
+      description: "Tên trên biển hiệu. / The name on the sign."
+      placeholder: "Mỳ Quảng Vỉa Hè (Hà Thân)"
+    validations: { required: true }
+
+  - type: input
+    id: address
+    attributes:
+      label: "Địa chỉ hoặc link Google Maps / Address or Google Maps link"
+      placeholder: "22 Tố Hữu — hoặc / or https://maps.app.goo.gl/..."
+    validations: { required: true }
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Loại / Type"
+      options:
+        - "Đồ ăn / Food"
+        - "Cà phê / Coffee"
+        - "Bar, pub / Nightlife"
+        - "Spa & massage / Wellness"
+        - "Đi dạo, tham quan / Sights & walks"
+        - "Ngoài trời / Outdoor"
+    validations: { required: true }
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Khu vực / Area"
+      options: ["Hải Châu", "Sơn Trà", "Mỹ An", "Liên Chiểu", "Hòa Xuân", "Hội An"]
+    validations: { required: true }
+
+  - type: input
+    id: price
+    attributes:
+      label: "Giá khoảng bao nhiêu? / Roughly how much?"
+      description: "Giá bạn thực sự trả. / What you actually paid."
+      placeholder: "15k–25k"
+
+  - type: checkboxes
+    id: session
+    attributes:
+      label: "Thời điểm nên đi / Best time of day"
+      options:
+        - label: "Sáng sớm (4:30–7AM)"
+        - label: "Buổi sáng (7–11AM)"
+        - label: "Buổi trưa (11AM–2PM)"
+        - label: "Buổi chiều (2–5PM)"
+        - label: "Hoàng hôn (5–6:30PM)"
+        - label: "Bữa tối (6–9PM)"
+        - label: "Buổi tối (7–11PM)"
+        - label: "Khuya (sau 11PM)"
+
+  - type: checkboxes
+    id: season
+    attributes:
+      label: "Mùa nào đẹp nhất? / Best season"
+      description: "Không chắc thì chọn Quanh năm. / Pick Year-round if it doesn't matter."
+      options:
+        - label: "Quanh năm / Year-round"
+        - label: "Mùa xuân (2–4) / Spring"
+        - label: "Mùa hè (5–8) / Summer"
+        - label: "Mùa thu, mùa mưa (9–11) / Autumn, rainy"
+        - label: "Mùa đông (12–1) / Winter"
+
+  - type: input
+    id: must_try
+    attributes:
+      label: "Nên gọi món gì? / What should you order?"
+      placeholder: "Mỳ Quảng gà"
+
+  - type: textarea
+    id: why
+    attributes:
+      label: "Vì sao bạn thích chỗ này? / Why do you go?"
+      description: "2–3 câu. Nói thật, đừng quảng cáo. Nói rõ khi nào nên đi và gọi món gì. / 2–3 sentences. Honest, not an ad. Say when to go and what to order."
+    validations: { required: true }
+
+  - type: input
+    id: last_visited
+    attributes:
+      label: "Bạn đi gần đây nhất khi nào? / When did you last go?"
+      placeholder: "2026-09 hoặc / or 'tháng trước'"
+    validations: { required: true }
+
+  - type: textarea
+    id: downside
+    attributes:
+      label: "Điểm trừ / Any downside"
+      description: "Chỗ nào cũng có. Nói ra giúp người đọc tin tưởng hơn. / Every place has one. Saying it is what makes the guide trustworthy."
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: "Bạn có liên quan tới quán không? / Your relationship to the place"
+      description: "Có liên quan không sao cả — giấu mới là vấn đề. / Having a connection is fine. Hiding it is not."
+      options:
+        - "Không liên quan / No relationship"
+        - "Mình là chủ quán / I own it"
+        - "Người thân hoặc bạn bè / Family or friend"
+    validations: { required: true }
+
+  - type: input
+    id: credit
+    attributes:
+      label: "Tên để ghi nhận / Name for credit (optional)"
+      description: "Để trống thì ghi nhận cho dự án. / Leave blank to credit the project."
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: "Xác nhận / Confirm"
+      options:
+        - label: "Mình đã tự tới đây. / I have been here myself."
+          required: true
+        - label: "Mình đồng ý chia sẻ nội dung theo CC BY-NC-SA 4.0 và cho phép dự án dùng trong sản phẩm có thu phí, có ghi nhận. / I agree to license this under CC BY-NC-SA 4.0 and to let the project use it in paid products, with credit."
+          required: true

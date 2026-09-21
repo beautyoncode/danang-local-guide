@@ -1,0 +1,46 @@
+name: "✏️ Cập nhật địa điểm / Update a place"
+description: "Giá đổi, giờ đổi, dời địa chỉ, hoặc bạn vừa ghé lại. / Price changed, hours changed, moved, or you just re-visited."
+title: "[update] "
+labels: ["update", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Chỉ cần điền phần nào thay đổi. / Fill in only what changed.
+
+  - type: input
+    id: slug
+    attributes:
+      label: "Slug"
+      description: "Tên file trong `content/places/`, ví dụ `com-ga-ba-thuy`. Không chắc thì ghi tên quán. / The filename in `content/places/`. If unsure, just write the place name."
+      placeholder: "com-ga-ba-thuy"
+    validations: { required: true }
+
+  - type: textarea
+    id: what_changed
+    attributes:
+      label: "Cái gì đã thay đổi? / What changed?"
+      description: "Ghi rõ giá trị cũ và mới. / Give the old value and the new one."
+      placeholder: "Giá giờ là 55k–80k, không còn 45k–70k."
+    validations: { required: true }
+
+  - type: input
+    id: last_visited
+    attributes:
+      label: "Bạn đi gần đây nhất khi nào? / When did you last go?"
+      description: "Quyết định `last_checked`, nên quan trọng. / This sets `last_checked`, so it matters."
+      placeholder: "2026-09-15"
+    validations: { required: true }
+
+  - type: input
+    id: credit
+    attributes:
+      label: "Tên để ghi nhận / Name for credit (optional)"
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: "Xác nhận / Confirm"
+      options:
+        - label: "Mình tự thấy điều này, không phải nghe kể. / I saw this myself; I'm not repeating a rumour."
+          required: true

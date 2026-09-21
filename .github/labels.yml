@@ -1,0 +1,23 @@
+# Colours are QUOTED on purpose: YAML reads an unquoted 5319E7 as scientific
+# notation (5319 x 10^7), and GitHub rejects it with an opaque 422.
+#
+# The label set, as data. `npm run labels` applies it (idempotent: creates what
+# is missing, updates colour/description on what exists, never deletes).
+- { name: new-place,               color: "0E8A16", description: "A place suggested for the guide" }
+- { name: update,                  color: "1D76DB", description: "Price, hours or details changed" }
+- { name: closed-or-moved,         color: "B60205", description: "A place has closed or moved — highest priority" }
+- { name: via-form,                color: "C2E0C6", description: "Arrived through the public form, no GitHub account" }
+- { name: needs-triage,            color: "FBCA04", description: "Not yet reviewed by a maintainer" }
+- { name: needs-verification,      color: "D93F0B", description: "Someone has to go and check in person" }
+- { name: needs-translation,       color: "5319E7", description: "Vietnamese is written, English is missing" }
+- { name: needs-en-review,         color: "9B6FE0", description: "English exists but a fluent speaker should check it" }
+- { name: stale,                   color: "795548", description: "last_checked is older than 180 days" }
+- { name: possible-spam,           color: "E4E669", description: "Heuristic flagged this; a human decides" }
+- { name: sync-failure,            color: "B60205", description: "The Notion sync workflow failed" }
+- { name: good-first-contribution, color: "7057FF", description: "A good place to start" }
+- { name: "area:hai-chau",         color: "BFDADC", description: "Hải Châu" }
+- { name: "area:son-tra",          color: "BFDADC", description: "Sơn Trà" }
+- { name: "area:my-an",            color: "BFDADC", description: "Mỹ An" }
+- { name: "area:lien-chieu",       color: "BFDADC", description: "Liên Chiểu" }
+- { name: "area:hoa-xuan",         color: "BFDADC", description: "Hòa Xuân" }
+- { name: "area:hoi-an",           color: "BFDADC", description: "Hội An" }

@@ -1,0 +1,7 @@
+# Every PR needs a review from an owner of the paths it touches.
+# Area stewards get added here as they appear — three merged contributions in
+# an area earns the role. Until then this is a bus factor of one (plan §7, Risk 7).
+
+/content/   @beautyoncode
+/src/       @beautyoncode
+/.github/   @beautyoncode

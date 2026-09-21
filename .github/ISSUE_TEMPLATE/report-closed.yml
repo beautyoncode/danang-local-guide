@@ -1,0 +1,45 @@
+name: "🚫 Báo quán đóng cửa hoặc dời đi / Report a place closed or moved"
+description: "Quán đóng cửa, dời địa chỉ, hoặc đổi hẳn. / A place has closed, moved, or changed completely."
+title: "[closed] "
+labels: ["closed-or-moved", "needs-verification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cái này quan trọng nhất. Một hướng dẫn giới thiệu quán đã đóng cửa là hướng dẫn hỏng.
+
+        This is the most valuable report there is. A guide that sends people to a closed place is a broken guide.
+
+  - type: input
+    id: slug
+    attributes:
+      label: "Slug"
+      placeholder: "com-ga-ba-thuy"
+    validations: { required: true }
+
+  - type: dropdown
+    id: what_happened
+    attributes:
+      label: "Chuyện gì xảy ra? / What happened?"
+      options:
+        - "Đóng cửa hẳn / Closed for good"
+        - "Dời sang địa chỉ khác / Moved somewhere else"
+        - "Vẫn mở nhưng khác hẳn (đổi chủ, đổi menu) / Still open but completely different"
+        - "Không chắc — tới thấy đóng / Not sure — found it shut"
+    validations: { required: true }
+
+  - type: input
+    id: new_address
+    attributes:
+      label: "Địa chỉ mới, nếu có dời / New address, if it moved"
+
+  - type: input
+    id: last_visited
+    attributes:
+      label: "Bạn đi gần đây nhất khi nào? / When did you last go?"
+    validations: { required: true }
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Thêm chi tiết / Anything else"
