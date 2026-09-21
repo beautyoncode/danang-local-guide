@@ -179,6 +179,15 @@ function conform(props, actual, kind, notes) {
       props[name] = { select: value.multi_select[0] ?? null };
     } else if (want === 'select' && got === 'status') {
       props[name] = { status: value.select };
+    } else if ((want === 'multi_select' || want === 'select') && got === 'rich_text') {
+      // Readable, but not filterable. Notion views can't filter free text by
+      // option, so say what converting the column would buy.
+      const names = want === 'multi_select'
+        ? value.multi_select.map(o => o.name) : [value.select?.name].filter(Boolean);
+      notes.add(
+        `${kind}.${name}: Notion column is free text, so values are written as a comma-separated ` +
+        `string and cannot be filtered on. Convert it to a ${want.replace('_', '-')} in Notion to get views.`);
+      props[name] = richText(names.join(', '));
     } else if (want === 'rich_text' && got === 'url') {
       props[name] = { url: value.rich_text[0]?.text?.content || null };
     } else if (want === 'url' && got === 'rich_text') {
@@ -290,8 +299,19 @@ try {
   if (DRY) say('DRY RUN — no writes will be sent to Notion.\n');
   if (FULL) say('FULL resync — hashes ignored.\n');
   const ctx = { placePageIds: new Map(), placeNames: new Map() };
+  const failures = [];
   // Places first: experience `Stops` relations need their page IDs.
-  for (const kind of ['places', 'experiences', 'neighborhoods']) await syncKind(kind, ctx);
+  for (const kind of ['places', 'experiences', 'neighborhoods']) {
+    try {
+      await syncKind(kind, ctx);
+    } catch (e) {
+      // Keep going so one dry run surfaces every database's problems at once.
+      if (e instanceof NotionError && [401, 403].includes(e.status)) throw e;
+      failures.push(e.message);
+      say(`${kind}: FAILED — see below`);
+    }
+  }
+  if (failures.length) throw new Error(failures.join('\n\n'));
 } catch (e) {
   const hint = e instanceof NotionError && e.isBlockLimit
     ? '\nThis is the workspace BLOCK LIMIT, not a permissions problem — the free plan is full.'
