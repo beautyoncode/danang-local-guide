@@ -221,28 +221,39 @@ function snapshot(rows, files) {
   // with parentheticals dropped and "A / B" aliases split — still an EXACT
   // match on the normalized value, never fuzzy, so nothing is adopted by
   // accident.
+  // Keys are TIERED, most specific first. The full name (parentheticals kept)
+  // is tried before the stripped one, because "The Local Beans (186 Phan Châu
+  // Trinh)" and "(84 Châu Thị Vĩnh Tế)" both strip to "the local beans" — a
+  // loose-only match makes the two branches collide and orphans one row.
   const keysFor = raw => {
-    const out = new Set();
+    const full = new Set(), stripped = new Set(), parts = new Set();
     for (const v of [].concat(raw).filter(Boolean)) {
+      const k = normalizeForCompare(v);
+      if (k) full.add(k);
       const bare = String(v).replace(/\([^)]*\)/g, ' ');
-      for (const part of [bare, ...bare.split(/[\/|]/)]) {
-        const k = normalizeForCompare(part);
-        if (k) out.add(k);
+      const b = normalizeForCompare(bare);
+      if (b && !full.has(b)) stripped.add(b);
+      for (const part of bare.split(/[\/|]/)) {
+        const pk = normalizeForCompare(part);
+        if (pk && !full.has(pk) && !stripped.has(pk)) parts.add(pk);
       }
     }
-    return [...out];
+    return [...full, ...stripped, ...parts];
   };
 
+  // A key that two Notion rows share is ambiguous and must never be matched on.
+  const AMBIGUOUS = Symbol('ambiguous');
   const index = new Map();
   for (const row of unclaimed)
-    for (const k of keysFor(plain(row, 'Name'))) if (!index.has(k)) index.set(k, row);
+    for (const k of keysFor(plain(row, 'Name')))
+      index.set(k, index.has(k) && index.get(k) !== row ? AMBIGUOUS : row);
 
   const adopted = [];
   for (const f of files) {
     if (bySlug.has(f.slug)) continue;
     for (const k of keysFor([f.name, f.name_en, f.slug.replace(/-/g, ' ')])) {
       const row = index.get(k);
-      if (!row) continue;
+      if (!row || row === AMBIGUOUS) continue;
       bySlug.set(f.slug, { pageId: row.id, hash: '' });   // empty hash forces a write
       for (const other of keysFor(plain(row, 'Name'))) index.delete(other);
       unclaimed.splice(unclaimed.indexOf(row), 1);
