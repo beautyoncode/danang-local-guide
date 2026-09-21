@@ -132,27 +132,65 @@ const BUILD = {
 // invalidates every page that uses it, with no extra bookkeeping.
 const hashOf = props => createHash('sha256').update(JSON.stringify(props)).digest('hex').slice(0, 32);
 
-/** Adds any property the sync needs and the data source doesn't have yet. */
+/**
+ * Adds any property the sync needs and the data source doesn't have yet, and
+ * reports the ACTUAL type of everything else. We adapt to the workspace rather
+ * than demanding it be reshaped — V2 built `Area` as a multi_select, and
+ * retyping a column by hand is both risky and unnecessary.
+ */
 async function ensureSchema(kind, dsId) {
   const ds = await getDataSource(dsId);
-  const have = ds.properties ?? {};
+  const actual = ds.properties ?? {};
   const add = {};
   for (const [name, type] of Object.entries(SPECS[kind])) {
-    const existing = have[name];
-    if (!existing) {
-      add[name] = type === 'relation'
-        ? { relation: { data_source_id: DS.places, type: 'single_property', single_property: {} } }
-        : { [type]: {} };
-    } else if (existing.type !== type) {
-      throw new Error(
-        `Notion property "${name}" on the ${kind} database is a ${existing.type}, but the sync writes ${type}. ` +
-        `Rename or retype that column in Notion, then re-run. Nothing was changed.`);
+    if (actual[name]) continue;
+    add[name] = type === 'relation'
+      ? { relation: { data_source_id: DS.places, type: 'single_property', single_property: {} } }
+      : { [type]: {} };
+  }
+  const added = Object.keys(add);
+  if (added.length && !DRY) {
+    await updateDataSource(dsId, add);
+    for (const n of added) actual[n] = { type: SPECS[kind][n] };
+  }
+  return { added, actual };
+}
+
+/**
+ * Reshape a built property value to the column type Notion actually has.
+ * Single-valued fields are interchangeable between select and multi_select, so
+ * those convert losslessly. Anything genuinely incompatible is collected and
+ * reported together — one round trip, not one per column.
+ */
+function conform(props, actual, kind, notes) {
+  const bad = [];
+  for (const [name, value] of Object.entries(props)) {
+    const want = Object.keys(value)[0];
+    const got = actual[name]?.type;
+    if (!got || got === want) continue;
+
+    if (want === 'select' && got === 'multi_select') {
+      props[name] = { multi_select: value.select ? [{ name: value.select.name }] : [] };
+    } else if (want === 'multi_select' && got === 'select') {
+      // Lossy: only the first value survives. Loud, because it silently drops data.
+      if (value.multi_select.length > 1) notes.add(
+        `${kind}.${name}: Notion column is a single select, so only the first of ` +
+        `${value.multi_select.length} values is written. Change it to multi-select in Notion to keep them all.`);
+      props[name] = { select: value.multi_select[0] ?? null };
+    } else if (want === 'select' && got === 'status') {
+      props[name] = { status: value.select };
+    } else if (want === 'rich_text' && got === 'url') {
+      props[name] = { url: value.rich_text[0]?.text?.content || null };
+    } else if (want === 'url' && got === 'rich_text') {
+      props[name] = richText(value.url);
+    } else {
+      bad.push(`  "${name}" is a ${got} in Notion, but the sync writes ${want}`);
     }
   }
-  if (!Object.keys(add).length) return [];
-  if (DRY) return Object.keys(add);
-  await updateDataSource(dsId, add);
-  return Object.keys(add);
+  if (bad.length) throw new Error(
+    `Incompatible Notion columns on the ${kind} database:\n${bad.join('\n')}\n` +
+    'Rename or retype those columns in Notion, then re-run. Nothing was changed.');
+  return props;
 }
 
 /**
@@ -187,6 +225,7 @@ function snapshot(rows, files) {
 }
 
 const log = [];
+const notes = new Set();
 const say = line => { log.push(line); console.log(line); };
 
 async function syncKind(kind, ctx) {
@@ -194,7 +233,7 @@ async function syncKind(kind, ctx) {
   if (!dsId) throw new Error(`Missing env var for ${kind} — set NOTION_${kind.toUpperCase()}_DS_ID.`);
 
   const files = entries.filter(e => e.kind === kind && e.data).map(e => e.data);
-  const added = await ensureSchema(kind, dsId);
+  const { added, actual } = await ensureSchema(kind, dsId);
   if (added.length) say(`  schema: added ${added.join(', ')}${DRY ? ' (dry run)' : ''}`);
 
   const rows = await queryAll(dsId);
@@ -204,7 +243,7 @@ async function syncKind(kind, ctx) {
   let created = 0, updated = 0, skipped = 0, archived = 0;
 
   for (const d of files) {
-    const props = BUILD[kind](d, ctx);
+    const props = conform(BUILD[kind](d, ctx), actual, kind, notes);
     const hash = hashOf(props);
     const known = bySlug.get(d.slug);
 
@@ -263,6 +302,8 @@ try {
   if (process.env.GITHUB_ENV) appendFileSync(process.env.GITHUB_ENV, `SYNC_ERROR<<EOF\n${e.message}${hint}\nEOF\n`);
   process.exit(1);
 }
+
+for (const n of notes) say(`⚠️ ${n}`);
 
 if (process.env.GITHUB_STEP_SUMMARY)
   appendFileSync(process.env.GITHUB_STEP_SUMMARY, `### Notion sync\n\n\`\`\`\n${log.join('\n')}\n\`\`\`\n`);
