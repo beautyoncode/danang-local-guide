@@ -47,7 +47,7 @@ Settings → **do not** collect email addresses. Leave responses anonymous; fiel
 4. **Project Settings → Script Properties**, add:
    - `GH_TOKEN` — a fine-grained PAT ([github.com/settings/personal-access-tokens](https://github.com/settings/personal-access-tokens)),
      scoped to **this repository only**, permission **Issues: read & write**, nothing else.
-   - `GH_REPO` — `GraphicDThanh/danang-local-guide`
+   - `GH_REPO` — `beautyoncode/danang-local-guide`
 5. **Triggers** (clock icon) → **Add trigger**:
    - function `onFormSubmit`, source **From spreadsheet**, event **On form submit**.
    - This must be the *installable* trigger. The simple one cannot call `UrlFetchApp`.

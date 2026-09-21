@@ -12,7 +12,7 @@
 - 🙌 Got an idea? [Add a place](../../../issues/new/choose)!
 - 🚀 Let's save the good spots together so nobody has to keep searching!
 - 🥰 Share it with friends coming to Đà Nẵng from afar. You'll score infinite points ^^
-- 🌟 And finally, [star this repo](https://github.com/GraphicDThanh/danang-cuisine)! 🌟
+- 🌟 And finally, [star this repo](https://github.com/beautyoncode/danang-local-guide)! 🌟 (originally [danang-cuisine](https://github.com/GraphicDThanh/danang-cuisine))
 
 **Enjoy Your DaNang!**
 

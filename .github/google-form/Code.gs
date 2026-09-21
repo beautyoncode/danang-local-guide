@@ -6,7 +6,7 @@
  *
  * Setup: Project Settings -> Script Properties
  *   GH_TOKEN  fine-grained PAT, this repo only, "Issues: read & write", nothing else
- *   GH_REPO   GraphicDThanh/danang-local-guide
+ *   GH_REPO   beautyoncode/danang-local-guide
  *
  * A submission creates an ISSUE, never content. Nothing reaches the repo,
  * the README or Notion until a maintainer opens a PR and CI passes.

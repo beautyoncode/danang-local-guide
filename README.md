@@ -12,7 +12,7 @@
 - 🙌 Có thêm idea thì [thêm địa điểm mới](../../issues/new/choose) nhé!
 - 🚀 Cùng lưu lại những chỗ hay ho để đỡ phải tìm kiếm nào!
 - 🥰 Chia sẻ cho bạn bè ở xa đến Đà Nẵng chơi nữa ha. Đảm bảo ghi điểm vô cực nè ^^
-- 🌟 Cuối cùng, hãy [star repo này](https://github.com/GraphicDThanh/danang-cuisine) 🌟
+- 🌟 Cuối cùng, hãy [star repo này](https://github.com/beautyoncode/danang-local-guide) 🌟 (bản gốc: [danang-cuisine](https://github.com/GraphicDThanh/danang-cuisine))
 
 **Enjoy Your DaNang!**
 
