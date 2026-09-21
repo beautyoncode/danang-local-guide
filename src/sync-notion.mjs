@@ -9,7 +9,7 @@
 //   node src/sync-notion.mjs [--full] [--dry-run]
 import { createHash } from 'node:crypto';
 import { appendFileSync } from 'node:fs';
-import { loadContent, notionLabel, label } from './lib/content.mjs';
+import { loadContent, notionLabel, label, normalizeForCompare } from './lib/content.mjs';
 import {
   queryAll, getDataSource, updateDataSource, createPage, updatePage, archivePage,
   title, richText, select, multiSelect, url, date, relation, plain, NotionError,
@@ -215,22 +215,42 @@ function snapshot(rows, files) {
     if (slug) bySlug.set(slug, { pageId: row.id, hash: plain(row, 'Sync hash').trim() });
     else unclaimed.push(row);
   }
-  const byName = new Map();
-  for (const row of unclaimed) byName.set(plain(row, 'Name').trim().toLowerCase(), row);
+
+  // Titles drift after an export: "Hai Chau (city center)" in the repo is
+  // "Hai Chau" in Notion. Compare on a diacritic- and punctuation-free form,
+  // with parentheticals dropped and "A / B" aliases split — still an EXACT
+  // match on the normalized value, never fuzzy, so nothing is adopted by
+  // accident.
+  const keysFor = raw => {
+    const out = new Set();
+    for (const v of [].concat(raw).filter(Boolean)) {
+      const bare = String(v).replace(/\([^)]*\)/g, ' ');
+      for (const part of [bare, ...bare.split(/[\/|]/)]) {
+        const k = normalizeForCompare(part);
+        if (k) out.add(k);
+      }
+    }
+    return [...out];
+  };
+
+  const index = new Map();
+  for (const row of unclaimed)
+    for (const k of keysFor(plain(row, 'Name'))) if (!index.has(k)) index.set(k, row);
 
   const adopted = [];
   for (const f of files) {
     if (bySlug.has(f.slug)) continue;
-    for (const candidate of [f.name, f.name_en]) {
-      const row = candidate && byName.get(String(candidate).trim().toLowerCase());
+    for (const k of keysFor([f.name, f.name_en, f.slug.replace(/-/g, ' ')])) {
+      const row = index.get(k);
       if (!row) continue;
       bySlug.set(f.slug, { pageId: row.id, hash: '' });   // empty hash forces a write
-      byName.delete(String(candidate).trim().toLowerCase());
-      adopted.push(f.slug);
+      for (const other of keysFor(plain(row, 'Name'))) index.delete(other);
+      unclaimed.splice(unclaimed.indexOf(row), 1);
+      adopted.push(`${f.slug} -> "${plain(row, 'Name')}"`);
       break;
     }
   }
-  return { bySlug, adopted, orphans: [...byName.values()] };
+  return { bySlug, adopted, orphans: unclaimed };
 }
 
 const log = [];
@@ -247,7 +267,10 @@ async function syncKind(kind, ctx) {
 
   const rows = await queryAll(dsId);
   const { bySlug, adopted, orphans } = snapshot(rows, files);
-  if (adopted.length) say(`  matched ${adopted.length} existing Notion row(s) by name (backfill)`);
+  if (adopted.length) {
+    say(`  matched ${adopted.length} existing Notion row(s) by name (backfill)`);
+    for (const a of adopted) say(`    ${a}`);
+  }
 
   let created = 0, updated = 0, skipped = 0, archived = 0;
 
@@ -292,7 +315,7 @@ async function syncKind(kind, ctx) {
   say(`${kind}: ${created} created, ${updated} updated, ${skipped} unchanged, ${archived} archived`);
   if (orphans.length)
     say(`  ⚠️ ${orphans.length} Notion row(s) have no Slug and no matching file — left untouched: ` +
-        orphans.map(r => plain(r, 'Name')).join(', '));
+        orphans.map(r => `"${plain(r, 'Name') || '(untitled)'}"`).join(', '));
 }
 
 try {
