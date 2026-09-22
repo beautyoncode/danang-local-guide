@@ -68,6 +68,46 @@ const LANG_NAV = {
   en: '[Tiếng Việt](../README.md) · **English** · [한국어](./legacy/README.ko.md) · [日本語](./legacy/README.ja.md) · [中文](./legacy/README.zh.md) · [Español](./legacy/README.es.md) · [العربية](./legacy/README.ar.md)',
 };
 
+// Set this once the public Google Form exists (see .github/google-form/).
+// While it is null the README simply omits the no-account path rather than
+// advertising a link that 404s.
+const FORM_URL = null;
+
+const CONTRIBUTE = {
+  vi: [
+    '## <a name="dong-gop"></a> 🙌 Góp thêm địa điểm',
+    '',
+    'Hướng dẫn này do người Đà Nẵng và bạn bè viết. Bạn biết chỗ nào hay, kể tụi mình nghe với.',
+    '',
+    '| Bạn là | Làm gì |',
+    '| --- | --- |',
+    ...(FORM_URL ? [`| Không có tài khoản GitHub | [Điền form này](${FORM_URL}) — làm được trên điện thoại |`] : []),
+    '| Có GitHub, ngại đụng file | [Tạo issue](../../issues/new/choose) — có sẵn mẫu điền |',
+    '| Quen dùng Git | Mở PR sửa `content/` — xem [CONTRIBUTING.md](./CONTRIBUTING.md) |',
+    '',
+    'Chỉ giới thiệu chỗ **bạn đã tự đi**. Viết tiếng Việt là đủ, tụi mình lo phần dịch.',
+    'Nói giá bạn thực sự trả, và nói luôn điểm trừ — xem [STYLE.md](./STYLE.md).',
+    '',
+    'Thấy quán đóng cửa hay đổi giá? [Báo tụi mình](../../issues/new/choose) — đó là đóng góp giá trị nhất.',
+  ],
+  en: [
+    '## <a name="contributing"></a> 🙌 Add a place',
+    '',
+    "This guide is written by people who live in Da Nang and their friends. If you know somewhere good, tell us.",
+    '',
+    '| You are | What to do |',
+    '| --- | --- |',
+    ...(FORM_URL ? [`| Without a GitHub account | [Fill in this form](${FORM_URL}) — works from your phone |`] : []),
+    '| On GitHub, but not touching files | [Open an issue](../../../issues/new/choose) — there are templates |',
+    '| Comfortable with Git | Open a PR against `content/` — see [CONTRIBUTING.md](../CONTRIBUTING.md) |',
+    '',
+    'Only suggest places **you have been to yourself**. Vietnamese alone is fine — we handle the translation.',
+    'Say the price you actually paid, and say the downside — see [STYLE.md](../STYLE.md).',
+    '',
+    'Found a place closed, or a price changed? [Tell us](../../../issues/new/choose) — that is the most valuable contribution there is.',
+  ],
+};
+
 const { taxonomy, entries } = loadContent();
 const places = entries
   .filter(e => e.kind === 'places' && e.data && e.data.status !== 'closed')
@@ -140,6 +180,7 @@ function build(lang) {
     for (const g of s.groups ?? []) out.push(`   - [${g[lang]}](#${g.anchor})`);
   });
 
+  out.push(`${SECTIONS.length + 1}. [${lang === 'vi' ? 'Góp thêm địa điểm' : 'Add a place'}](#${lang === 'vi' ? 'dong-gop' : 'contributing'})`);
   out.push('', t.note, '', '---', '');
 
   for (const s of SECTIONS) {
@@ -157,6 +198,7 @@ function build(lang) {
     out.push('---', '');
   }
 
+  out.push(...CONTRIBUTE[lang], '', '---', '');
   out.push('<p align="center"><strong>🥰 Enjoy Your DaNang And Share With Us 🥰</strong></p>', '');
   return out.join('\n').replace(/\n{3,}/g, '\n\n');
 }

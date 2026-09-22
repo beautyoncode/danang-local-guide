@@ -36,6 +36,7 @@
 6. [Chèo SUP & Lướt sóng](#rowing-sup)
 7. [Leo núi](#treaking)
 8. [Hội An](#hoi-an)
+9. [Góp thêm địa điểm](#dong-gop)
 
 > **Lưu ý:** file này được **tạo tự động** từ `content/**/*.yml`. Đừng sửa trực tiếp — sửa file YAML rồi mở PR. Xem [CONTRIBUTING.md](./CONTRIBUTING.md).
 
@@ -637,6 +638,22 @@
 - **Giá:** 50k – 100k
 - Nếu chọn 1 quán cafe Hội An thì mình chọn quán này. Vườn đẹp, view biển trực diện từ trên cao.
 - Cần một chốn bình yên ngồi ngắm biển và nghe tiếng sóng vỗ thì đây là nơi lý tưởng nhất. Buổi chiều có thể có gió, nên mang theo áo khoác.
+
+---
+
+## <a name="dong-gop"></a> 🙌 Góp thêm địa điểm
+
+Hướng dẫn này do người Đà Nẵng và bạn bè viết. Bạn biết chỗ nào hay, kể tụi mình nghe với.
+
+| Bạn là | Làm gì |
+| --- | --- |
+| Có GitHub, ngại đụng file | [Tạo issue](../../issues/new/choose) — có sẵn mẫu điền |
+| Quen dùng Git | Mở PR sửa `content/` — xem [CONTRIBUTING.md](./CONTRIBUTING.md) |
+
+Chỉ giới thiệu chỗ **bạn đã tự đi**. Viết tiếng Việt là đủ, tụi mình lo phần dịch.
+Nói giá bạn thực sự trả, và nói luôn điểm trừ — xem [STYLE.md](./STYLE.md).
+
+Thấy quán đóng cửa hay đổi giá? [Báo tụi mình](../../issues/new/choose) — đó là đóng góp giá trị nhất.
 
 ---
 

@@ -65,7 +65,33 @@ for (const [group, table] of [['type', gs.TYPE], ['area', gs.AREA],
       `form option "${labelText}" maps to "${key}", which is not in taxonomy.yml ${group}`);
 }
 
-// 3. The block, once a maintainer fills the TODOs, passes the real validator.
+// 3. The GitHub Issue Form asks the same questions, WORD FOR WORD, as the
+//    Google Form. That is what lets the Phase 4 issue-to-pr bot have one
+//    parser instead of three (plan §3.3) — so drift here is a real defect.
+const issueForm = YAML.parse(
+  readFileSync(join(ROOT, '.github', 'ISSUE_TEMPLATE', 'new-place.yml'), 'utf8'));
+const formLabels = new Set(issueForm.body.map(f => f.attributes?.label).filter(Boolean));
+const shared = ['name', 'address', 'type', 'area', 'price', 'session', 'season',
+  'mustTry', 'why', 'lastVisited', 'downside', 'relationship', 'credit'];
+for (const key of shared)
+  assert.ok(formLabels.has(Q[key]),
+    `.github/ISSUE_TEMPLATE/new-place.yml has no field labelled "${Q[key]}" ` +
+    `(Code.gs Q.${key}). The two contribution paths have drifted.`);
+
+// The dropdown/checkbox options must match too, or the shared lookup tables break.
+const optionsOf = label => {
+  const f = issueForm.body.find(x => x.attributes?.label === label);
+  return new Set((f.attributes.options ?? []).map(o => (typeof o === 'string' ? o : o.label)));
+};
+for (const [key, table] of [['type', gs.TYPE], ['area', gs.AREA],
+  ['session', gs.SESSION], ['season', gs.SEASON], ['relationship', gs.RELATIONSHIP]]) {
+  const inForm = optionsOf(Q[key]);
+  for (const option of Object.keys(table))
+    assert.ok(inForm.has(option),
+      `Issue form "${Q[key]}" is missing the option "${option}" that Code.gs maps.`);
+}
+
+// 4. The block, once a maintainer fills the TODOs, passes the real validator.
 const file = join(CONTENT, 'places', `${parsed.slug}.yml`);
 const filled = { ...parsed, category: 'an-sang', price_band: '1', vibe: ['street-food', 'local'], good_for: ['solo'] };
 delete filled.link;                        // the sample address IS the Maps link

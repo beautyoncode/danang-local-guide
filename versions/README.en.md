@@ -36,6 +36,7 @@
 6. [Paddle Boarding (SUP) & Surfing](#rowing-sup)
 7. [Hiking](#treaking)
 8. [Hội An](#hoi-an)
+9. [Add a place](#contributing)
 
 > **Note:** this file is **generated** from `content/**/*.yml` — edit the YAML and open a PR, not this Markdown. See [CONTRIBUTING.md](../CONTRIBUTING.md).
 >
@@ -529,6 +530,22 @@
 - **Address:** 40 Nguyễn Phan Vinh, Hội An
 - **Price:** 50k – 100k
 - Our pick if you choose one cafe in Hoi An: beautiful garden and head-on sea view from above. Windy in the afternoon - bring a jacket.
+
+---
+
+## <a name="contributing"></a> 🙌 Add a place
+
+This guide is written by people who live in Da Nang and their friends. If you know somewhere good, tell us.
+
+| You are | What to do |
+| --- | --- |
+| On GitHub, but not touching files | [Open an issue](../../../issues/new/choose) — there are templates |
+| Comfortable with Git | Open a PR against `content/` — see [CONTRIBUTING.md](../CONTRIBUTING.md) |
+
+Only suggest places **you have been to yourself**. Vietnamese alone is fine — we handle the translation.
+Say the price you actually paid, and say the downside — see [STYLE.md](../STYLE.md).
+
+Found a place closed, or a price changed? [Tell us](../../../issues/new/choose) — that is the most valuable contribution there is.
 
 ---
 
